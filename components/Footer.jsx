@@ -44,35 +44,16 @@ export default function Footer() {
   return (
     <footer className={css.footer}>
       <div className={css.footer__addr}>
-      <Link href="../">
-        <h1 className={css.footer__logo}>
-          {" "}
-          <Image src={Logo} alt="" width={50} height={50} />{" "}
-          <span>Indian Food Truck</span>
-        </h1>
+        <Link href="../">
+          <h1 className={css.footer__logo}>
+            {" "}
+            <Image src={Logo} alt="" width={50} height={50} />{" "}
+            <span>Indian Food Truck</span>
+          </h1>
         </Link>
       </div>
 
       <ul className={css.footer__nav}>
-        {/* <li className={css.nav__item}>
-        <h2 className={css.nav__title}>Privacy Policy</h2>
-  
-        <ul className={css.nav__ul}>
-        <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
-          
-          <li>
-            <a href="#">Sitemap</a>
-          </li>
-          
-        </ul>
-      </li> */}
-
         <li className={css.nav__item}>
           <h2 className={css.nav__title}>FAQ</h2>
 
@@ -97,31 +78,10 @@ export default function Footer() {
                 </a>
               </OverlayTrigger>
             </li>
-            <li>
-              {/* <Tooltip placement="right" className="in" id="tooltip-right">
-        <a href="#">Online</a>
-  </Tooltip> */}
-            </li>
+            <li></li>
           </ul>
         </li>
 
-        {/* <li className={css.nav__item}>
-        <h2 className={css.nav__title}>Link</h2>
-        
-        <ul className={css.nav__ul}>
-          <li>
-            <a href="#">Help</a>
-          </li>
-          
-          <li>
-            <a href="#">Your Account</a>
-          </li>
-          
-          <li>
-            <a href="#">About Us</a>
-          </li>
-        </ul>
-      </li> */}
         <li className={css.nav__item}>
           <h2 className={css.nav__title}>Social Media</h2>
 
@@ -129,7 +89,8 @@ export default function Footer() {
             <li className={css.facebook}>
               <a
                 href="https://www.facebook.com/profile.php?id=100089118845825/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-facebook-square" aria-hidden="true"></i>
               </a>
@@ -138,17 +99,14 @@ export default function Footer() {
             <li>
               <a
                 href="https://www.instagram.com/indianfoodtruck.online/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-instagram" aria-hidden="true">
                   {" "}
                 </i>
               </a>
             </li>
-
-            {/* <li>
-          <i className="fa fa-twitter" aria-hidden="true"></i>
-                    </li> */}
           </ul>
         </li>
         <li className={css.nav__item}>
@@ -159,12 +117,23 @@ export default function Footer() {
             <p className={css.contact__footer}>
               <a
                 className={css.footer__btn}
-                href="mailto:contact@indianfoodtruck.online" target="_blank" rel="noreferrer"
+                href="mailto:contact@indianfoodtruck.online"
+                target="_blank"
+                rel="noreferrer"
               >
                 Email{" "}
-                <i className="fa fa-envelope-o" aria-hidden="true" color="white" />
+                <i
+                  className="fa fa-envelope-o"
+                  aria-hidden="true"
+                  color="white"
+                />
               </a>
-              <a className={css.footer__btn} href="https://wa.link/pde07x" target="_blank" rel="noreferrer">
+              <a
+                className={css.footer__btn}
+                href="https://wa.link/pde07x"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Contact{" "}
                 <i className="fa fa-phone" aria-hidden="true" color="white" />
               </a>
@@ -174,12 +143,6 @@ export default function Footer() {
       </ul>
 
       <div className={css.legal}>
-        {/* <div className={css.legal__links}>
-   
-     <UilFacebook size={25} />
-        <UilInstagram size={25} />
-        <UilTwitter size={25} />
-      </div> */}
         <p>
           &copy; All rights reserved. Made with{" "}
           <i className="fa fa-heart" aria-hidden="true"></i> by{" "}

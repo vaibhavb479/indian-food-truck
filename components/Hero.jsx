@@ -26,7 +26,6 @@ export default function Hero() {
           <span className={css.miniPara}>
             All Street Food Lovers Are Heartedly Invited 🥘
           </span>
-
           {/* <button className={`btn ${css.btn}`}>
           <Link href="../">Get Started</Link>
         </button> */}
@@ -41,15 +40,6 @@ export default function Hero() {
           <div className={css.imageContainer}>
             <Image src={HeroImage} alt="" layout="intrinsic" />
           </div>
-          {/* 
-        <div className={css.contactUs}>
-          <span>
-            <Link href="https://wa.link/pde07x">Contact us</Link>
-          </span>
-          <div>
-            <UilPhone color="white" />
-          </div>
-        </div> */}
 
           <div className={css.Tea}>
             <div>

@@ -2,6 +2,7 @@ import css from "../styles/About.module.css";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+// import Video from "../assets/video.mp4";
 import s6 from "../assets/s6.png";
 import s5 from "../assets/s5.png";
 import s4 from "../assets/s4.png";
@@ -17,6 +18,7 @@ import foodTruck13 from "../assets/foodTruck-13.jpg";
 import foodTruck14 from "../assets/foodTruck-14.jpg";
 import foodTruck15 from "../assets/foodTruck-15.jpg";
 import foodTruck16 from "../assets/foodTruck-16.jpg";
+import ReactPlayer from "react-player";
 export default function AboutUs() {
   const responsive = {
     superLargeDesktop: {
@@ -40,11 +42,8 @@ export default function AboutUs() {
   return (
     <div className={css.container}>
       <section className={css.imgSection}>
-        {/* <div className={css.marqueeTag}> */}
         <div className="col-md-12 mt-5">
-          {/* <marquee  direction="right"> */}
           <Image src={foodTruck16} alt="" layout="intrinsic" />
-          {/* </marquee> */}
         </div>
       </section>
       <section className="mt-5 p-20">
@@ -75,91 +74,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-
-{/* <section className="mt-5 p-20">
-        <div className="col-md-12">
-          <h5 className="text-center">ABOUT US</h5>
-        </div>
-        <div className={css.profileArea}>
-          <div className="container aboutContainer">
-         <div className="row">
-          <div className="col-md-12">
-          <div className="card">
-          
-              <Image
-              className="img1"
-                src={foodTruck4}
-                alt=""
-                objectFit="cover"
-                layout="intrinsic"
-              />
-             
-              <div className="img2">
-                <Image
-               
-                src={foodTruck6}
-                alt=""
-                objectFit="cover"
-                layout="intrinsic"
-              />
-              </div>
-            
-          <div className="main-text">
-            We are group of professional chefs decide to open a small restaurant
-            operation here in Sunnyvale, believed in ourselves to maintain
-            Quality and Affordability in concern we came out with idea having
-            food truck at the same time be different than any other restaurants
-            or food truck to combine menu from all over India, should make it
-            looks like this is everyone’s spot as we all thrive for street foods
-            and best Chai we also had the same missing feel. “INDIAN STREET FOOD
-            TRUCK” is one of the must try spot where you all should stop by and
-            give us your support.
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="mt-3 p-20">
- 
- <div className="col-md-12">
-        <h4 className="text-center">You May Know Also 🍒</h4>
-      </div>
-
-      <div className="row col-md-12 mt-4">
-    
-      <Carousel responsive={responsive}>
-
-  <div className="p-2">  
-    <Image src={vadapav} alt="" objectFit="cover" layout="intrinsic" />
-    <span>Vadapav</span>
-  </div>
-  <div className="p-2">  
-    <Image src={vadapav} alt="" objectFit="cover" layout="intrinsic" />
-    <span>Vadapav</span>
-  </div>
-  <div className="p-2">  
-    <Image src={vadapav} alt="" objectFit="cover" layout="intrinsic" />
-    <span>Vadapav</span>
-  </div>
-  <div className="p-2">  
-    <Image src={vadapav} alt="" objectFit="cover" layout="intrinsic" />
-    <span>Vadapav</span>
-  </div>
-  <div className="p-2">  
-    <Image src={vadapav} alt="" objectFit="cover" layout="intrinsic" />
-    <span>Vadapav</span>
-  </div>
-</Carousel>
-
-          
-      </div>
-    
- </section> */}
-
       <section className="mt-5 p-20">
         <div className="col-md-12">
           <h4 className="text-center">INDIAN FOOD TRUCKS</h4>
@@ -167,9 +81,6 @@ export default function AboutUs() {
 
         <div className="row mt-5">
           <Carousel responsive={responsive}>
-            {/* <div className={css.ImageWrapperfoodTruck}>  
-    <Image src={foodTruck1} alt="" objectFit="cover" layout="intrinsic" />
-  </div> */}
             <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck2}
@@ -178,9 +89,6 @@ export default function AboutUs() {
                 layout="intrinsic"
               />
             </div>
-            {/* <div className={css.ImageWrapperfoodTruck}>  
-    <Image src={foodTruck3} alt="" objectFit="cover" layout="intrinsic" />
-  </div> */}
             <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck4}
@@ -229,9 +137,7 @@ export default function AboutUs() {
                 layout="intrinsic"
               />
             </div>
-            {/* <div className={css.ImageWrapperfoodTruck}>  
-    <Image src={foodTruck10} alt="" objectFit="cover" layout="intrinsic" />
-  </div> */}
+
             <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck11}
@@ -240,9 +146,7 @@ export default function AboutUs() {
                 layout="intrinsic"
               />
             </div>
-            {/* <div className={css.ImageWrapperfoodTruck}>  
-    <Image src={foodTruck12} alt="" objectFit="cover" layout="intrinsic" />
-  </div> */}
+
             <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck13}
@@ -292,13 +196,6 @@ export default function AboutUs() {
 
             <span>Hygiene is our first priority to serve you.</span>
           </div>
-
-          {/* <div className={css.feature}>
-          <div className={css.ImageWrapper}>
-            <Image src={s4} alt="" objectFit="cover" layout="intrinsic" />
-          </div>
-          <span>Made everything fresh as we are small operation.</span>
-        </div> */}
 
           <div className={css.feature}>
             <div className={css.ImageWrapper}>

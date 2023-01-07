@@ -183,14 +183,11 @@
   background-color: #fff;
 }
   
-  
   .nav__ulmedia{
     display: flex;
     gap: 1.5rem;
   }
-
   .nav__ulmedia i{
-   
       font-size: 14px;
       border-radius: 50%;
       border: 1px solid #0693e3;

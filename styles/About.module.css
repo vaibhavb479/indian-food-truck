@@ -41,9 +41,6 @@
   height: 16rem;
 }
 
-
-
-
 @media screen and (min-width: 825px) {
   .heading{
       display: flex;
@@ -58,11 +55,9 @@
   .heading{
       display: flex;
       flex-direction: column;
-      
       justify-content: center;
       text-align: center;
       margin-top: 3rem;
-        
       /*align-items: center; */
   }
 }
@@ -78,7 +73,6 @@
   font-size: 2rem;
   font-weight: bold;
 }
-
 
 @media screen and (min-width: 825px) {
   .services{
@@ -128,8 +122,6 @@
   text-align: center;
 
 }
-
-
 .ImageWrapperfoodTruck{
   height: 14rem;
   width: 24rem;

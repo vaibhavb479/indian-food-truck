@@ -1,27 +1,13 @@
-/* 
-@media screen and (min-width: 825px) {
-    .heading{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: center;
-        align-items: center;
-        margin-top: 3rem;
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+     
     }
-} */
-/* @media screen and (max-width: 820px) { */
-    .heading{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: center;
-        text-align: center;
-        margin-top: 3rem;
-        /* S
-        
-        align-items: center; */
-    }
-/* } */
+
 .heading>:nth-child(1)
 {
     color: var(--themeRed);

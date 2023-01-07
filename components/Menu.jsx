@@ -4,7 +4,6 @@ import { urlFor } from "../lib/client";
 import Link from "next/link";
 
 export default function Menu({ foods }) {
-
   return (
     <div className={css.container}>
       <div className={css.heading}>

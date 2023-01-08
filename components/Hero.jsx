@@ -3,7 +3,7 @@ import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
 import HeroImage from "../assets/HeroTruck.png";
 import { UilPhone } from "@iconscout/react-unicons";
-import Tea1 from "../assets/chai.jpg";
+ import Tea1 from "../assets/chai.png";
 import Link from "next/link";
 export default function Hero() {
   return (

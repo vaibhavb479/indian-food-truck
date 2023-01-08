@@ -6,18 +6,18 @@ import "react-multi-carousel/lib/styles.css";
 import s6 from "../assets/s6.png";
 import s5 from "../assets/s5.png";
 import s4 from "../assets/s4.png";
-import foodTruck2 from "../assets/foodTruck-2.jpg";
-import foodTruck4 from "../assets/foodTruck-4.jpg";
-import foodTruck5 from "../assets/foodTruck-5.jpg";
-import foodTruck6 from "../assets/foodTruck-6.jpg";
-import foodTruck7 from "../assets/foodTruck-7.jpg";
-import foodTruck8 from "../assets/foodTruck-8.jpg";
-import foodTruck9 from "../assets/foodTruck-9.jpg";
-import foodTruck11 from "../assets/foodTruck-11.jpg";
-import foodTruck13 from "../assets/foodTruck-13.jpg";
-import foodTruck14 from "../assets/foodTruck-14.jpg";
-import foodTruck15 from "../assets/foodTruck-15.jpg";
-import foodTruck16 from "../assets/foodTruck-16.jpg";
+import foodTruck2 from "../assets/foodTruck2.png";
+import foodTruck4 from "../assets/foodTruck4.png";
+import foodTruck5 from "../assets/foodTruck5.png";
+import foodTruck6 from "../assets/foodTruck6.png";
+import foodTruck7 from "../assets/foodTruck7.png";
+import foodTruck8 from "../assets/foodTruck8.png";
+import foodTruck9 from "../assets/foodTruck9.png";
+import foodTruck11 from "../assets/foodTruck11.png";
+import foodTruck13 from "../assets/foodTruck13.png";
+import foodTruck14 from "../assets/foodTruck14.png";
+import foodTruck15 from "../assets/foodTruck15.png";
+ import foodTruck16 from "../assets/foodTruck16.png";
 import ReactPlayer from "react-player";
 export default function AboutUs() {
   const responsive = {
@@ -89,7 +89,7 @@ export default function AboutUs() {
                 layout="intrinsic"
               />
             </div>
-            <div className={css.ImageWrapperfoodTruck}>
+             <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck4}
                 alt=""

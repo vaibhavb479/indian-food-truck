@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [Order, setOrder] = useState("");
   //hamburger menu//
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState("true");
 
   useEffect(() => {
     setOrder(localStorage.getItem("order"));
@@ -54,7 +54,7 @@ export default function Header() {
         <div
           className="collapse navbar-collapse justifyContent"
           id="collapsibleNavbar"
-          style={isActive ? isActiveSty : inActiveSty}
+          style={isActive ? inActiveSty : isActiveSty}
         >
           <ul className="navbar-nav">
             <li className="nav-item">

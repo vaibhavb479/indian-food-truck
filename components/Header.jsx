@@ -61,7 +61,7 @@ export default function Header() {
               <Link href="../">Home</Link>
             </li>
             <li className="nav-item mb-1">
-              <Link href="/about">About Indian Food Truck</Link>
+              <Link href="/about">About us</Link>
             </li>
             <li className="nav-item mb-1">
               <Link href="/cart">

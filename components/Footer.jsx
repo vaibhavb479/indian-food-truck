@@ -92,7 +92,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                <UilFacebook />
               </a>
             </li>
 
@@ -102,9 +102,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa fa-instagram" aria-hidden="true">
-                  {" "}
-                </i>
+                <UilInstagram />{" "}
               </a>
             </li>
           </ul>

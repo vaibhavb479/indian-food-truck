@@ -66,12 +66,7 @@ export default function Header() {
             <li className="nav-item mb-1">
               <Link href="/cart">
                 <div className={css.cart}>
-                  <i
-                    className="fa fa-shopping-cart"
-                    aria-hidden="true"
-                    style={{ fontSize: "28px" }}
-                  ></i>
-                  {/* <UilShoppingBag size={35} color="#2E2E2E" /> */}
+                  <UilShoppingBag size={35} color="#2E2E2E" />
                   <div className={css.badge}>{items}</div>
                 </div>
               </Link>

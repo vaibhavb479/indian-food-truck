@@ -1,9 +1,4 @@
-import {
-  UilFacebook,
-  UilInstagram,
-  UilTwitter,
-  UilPhone,
-} from "@iconscout/react-unicons";
+import { UilFacebook, UilInstagram, UilPhone } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
@@ -119,12 +114,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Email{" "}
-                <i
-                  className="fa fa-envelope-o"
-                  aria-hidden="true"
-                  color="white"
-                />
+                Email 📧
               </a>
               <a
                 className={css.footer__btn}
@@ -132,8 +122,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact{" "}
-                <i className="fa fa-phone" aria-hidden="true" color="white" />
+                Contact ☎️
               </a>
             </p>
           </address>
@@ -142,8 +131,7 @@ export default function Footer() {
 
       <div className={css.legal}>
         <p>
-          &copy; All rights reserved. Made with{" "}
-          <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
+          &copy; All rights reserved. Made with ❤️ by{" "}
           <a href="https://www.aavians.com/" target="_blank" rel="noreferrer">
             AAVIANS
           </a>

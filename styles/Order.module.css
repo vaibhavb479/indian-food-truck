@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin-top: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -52,12 +53,12 @@
 }
 
 .pending {
-  width: max-content;
-  background-color: orange;
-  padding: 0.5rem;
-  font-size: 0.8rem;
   border-radius: 1rem;
   color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  width: max-content;
+  background-color: orange;
 }
 
 .completed {
@@ -66,4 +67,21 @@
   background-color: rgb(159, 230, 53);
   padding: 0.5rem;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 765px) {
+  .details {
+    width: 85%;
+  }
+  .statusContainer {
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .details {
+    width: 60%;
+  }
+  .statusContainer {
+    gap: 6rem;
+  }
 }

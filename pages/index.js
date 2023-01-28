@@ -20,7 +20,7 @@ export default function Home({ foods }) {
         {/* body */}
         <main>
           <Hero />
-          <Services />
+          {/* <Services /> */}
           <Menu foods={foods} />
         </main>
       </div>

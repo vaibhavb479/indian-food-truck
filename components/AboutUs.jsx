@@ -1,6 +1,7 @@
 import css from "../styles/About.module.css";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
+import Services from "./Services";
 import "react-multi-carousel/lib/styles.css";
 // import Video from "../assets/video.mp4";
 import s6 from "../assets/s6.png";
@@ -174,37 +175,7 @@ export default function AboutUs() {
           </Carousel>
         </div>
       </section>
-      <section className="mt-5">
-        <div className="col-md-12 text-center">
-          <h5>WHY INDIAN STREET FOOD TRUCK</h5>
-        </div>
-
-        {/* feature */}
-        <div className={css.services}>
-          <div className={css.feature}>
-            <div className={css.ImageWrapper}>
-              <Image src={s6} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-
-            <span>We are Chefs operating business</span>
-          </div>
-
-          <div className={css.feature}>
-            <div className={css.ImageWrapper}>
-              <Image src={s5} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-
-            <span>Hygiene is our first priority to serve you.</span>
-          </div>
-
-          <div className={css.feature}>
-            <div className={css.ImageWrapper}>
-              <Image src={s4} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-            <span>Competing prices for your affordable meal.</span>
-          </div>
-        </div>
-      </section>
+    <Services/>
     </div>
   );
 }

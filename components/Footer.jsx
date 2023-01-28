@@ -41,7 +41,12 @@ export default function Footer() {
       </strong>
     </Tooltip>
   );
+  const windowScroll= () => {
+    window.scrollTo(0, 500);
+  };
+ 
   return (
+    <>
     <footer className={css.footer}>
       <div className={css.footer__addr}>
         <Link href="../">
@@ -54,7 +59,7 @@ export default function Footer() {
       </div>
 
       <ul className={css.footer__nav}>
-        <li className={css.nav__item}>
+        {/* <li className={css.nav__item}>
           <h2 className={css.nav__title}>FAQ</h2>
 
           <ul className={css.nav__ul}>
@@ -80,7 +85,7 @@ export default function Footer() {
             </li>
             <li></li>
           </ul>
-        </li>
+        </li> */}
 
         <li className={css.nav__item}>
           <h2 className={css.nav__title}>Social Media</h2>
@@ -109,7 +114,7 @@ export default function Footer() {
             </li>
           </ul>
         </li>
-        <li className={css.nav__item}>
+        {/* <li className={css.nav__item}>
           <h2 className={css.nav__title}>Contact Us</h2>
           <address>
             #603 Old San Francisco Road, Sunnyvale, CA-94086
@@ -139,18 +144,24 @@ export default function Footer() {
               </a>
             </p>
           </address>
-        </li>
+        </li> */}
       </ul>
 
       <div className={css.legal}>
         <p>
-          &copy; All rights reserved. Made with{" "}
-          <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-          <a href="https://www.aavians.com/" target="_blank" rel="noreferrer">
+        &copy; All rights reserved.
+          {/* &copy; All rights reserved. Made with{" "} */}
+          {/* <i className="fa fa-heart" aria-hidden="true"></i> by{" "} */}
+          {/* <a href="https://www.aavians.com/" target="_blank" rel="noreferrer">
             AAVIANS
-          </a>
+          </a> */}
         </p>
       </div>
+    
+   
+  
     </footer>
+    <div className={css.button_sticky} onClick={windowScroll}><i className="fa fa-cutlery"></i>Order Online</div>
+     </>
   );
 }

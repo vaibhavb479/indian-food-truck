@@ -1,9 +1,4 @@
-import {
-  UilFacebook,
-  UilInstagram,
-  UilTwitter,
-  UilPhone,
-} from "@iconscout/react-unicons";
+import { UilFacebook, UilInstagram, UilPhone } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
@@ -97,7 +92,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                <UilFacebook />
               </a>
             </li>
 
@@ -107,9 +102,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa fa-instagram" aria-hidden="true">
-                  {" "}
-                </i>
+                <UilInstagram />{" "}
               </a>
             </li>
           </ul>
@@ -126,12 +119,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Email{" "}
-                <i
-                  className="fa fa-envelope-o"
-                  aria-hidden="true"
-                  color="white"
-                />
+                Email 📧
               </a>
               <a
                 className={css.footer__btn}
@@ -139,8 +127,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact{" "}
-                <i className="fa fa-phone" aria-hidden="true" color="white" />
+                Contact ☎️
               </a>
             </p>
           </address>

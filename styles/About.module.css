@@ -139,3 +139,37 @@
 .aboutImg span img{
   border-radius: 0.8rem;
 }
+.mbr_section_title {
+  color: #3d1c22;
+  margin: 25px 0;
+  font-size: 4rem!important;
+  font-weight: 400!important;
+}
+
+.cid-sK8XwkDPAS .list_widget {
+  margin-bottom: 43px;
+}
+.list_widget .mbr_section_subtitle{
+  line-height: 1.2727em!important;
+  color: #3d1c22!important;
+  font-family: 'Brygada 1918', serif;
+  font-size: 2.0625rem;
+}
+.list_widget .mbr-text{
+  color: #7a7a7a;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1rem;
+  line-height: 1.625em;
+}
+.listBtn{
+  position: relative;
+    display: inline-block;
+    padding: 1px 7px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2em;
+}
+

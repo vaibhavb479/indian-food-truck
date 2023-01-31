@@ -20,7 +20,8 @@ import foodTruck11 from "../assets/foodTruck11.png";
 import foodTruck13 from "../assets/foodTruck13.png";
 import foodTruck14 from "../assets/foodTruck14.png";
 import foodTruck15 from "../assets/foodTruck15.png";
- import foodTruck16 from "../assets/foodTruck16.png";
+import foodTruck16 from "../assets/foodTruck16.png";
+import foodTruck17 from "../assets/about-us.png";
 import ReactPlayer from "react-player";
 export default function AboutUs() {
   const responsive = {
@@ -46,7 +47,7 @@ export default function AboutUs() {
     <div className={css.container}>
       <section className={css.imgSection}>
         <div className="col-md-12 mt-5">
-          <Image src={foodTruck16} alt="" layout="intrinsic" />
+          <Image src={foodTruck17} alt="" layout="intrinsic" />
         </div>
       </section>
       <section className="mt-5 p-20">
@@ -92,7 +93,7 @@ export default function AboutUs() {
                 layout="intrinsic"
               />
             </div>
-             <div className={css.ImageWrapperfoodTruck}>
+            <div className={css.ImageWrapperfoodTruck}>
               <Image
                 src={foodTruck4}
                 alt=""
@@ -177,67 +178,64 @@ export default function AboutUs() {
           </Carousel>
         </div>
       </section>
-    <Services/>
-    <section data-bs-version="5.1" className="features5 cid-sK8XwkDPAS" id="features5-7">
-    
+      <Services />
+      <section
+        data-bs-version="5.1"
+        className="features5 cid-sK8XwkDPAS"
+        id="features5-7"
+      >
+        <div className="two_background"></div>
 
-    
-    <div className="two_background"></div>
-    
         <div className="row justify-content-center">
-            <div className="col-12 col-md-3 col-lg-4">
-                <div className="image_left">
-                <Image
-                src={mango}
-                alt=""
-                objectFit="cover"
-                layout="intrinsic"
-              />
-                </div>
+          <div className="col-12 col-md-3 col-lg-4">
+            <div className="image_left">
+              <Image src={mango} alt="" objectFit="cover" layout="intrinsic" />
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
-                <div className="main_header">
-                    <h2 className={css.mbr_section_title}>SPECIALS</h2>
-                    <div className="menu_widget">
-                        
-                    
-                        
-                    <div className="list_widget">
-                            <h3 className={css.mbr_section_subtitle}>Delicious Steak</h3>
-                            <p className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur) </p>
-                        </div>
-                        {/* <div className="list_widget">
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="main_header">
+              <h2 className={css.mbr_section_title}>SPECIALS</h2>
+              <div className="menu_widget">
+                <div className="list_widget">
+                  <h3 className={css.mbr_section_subtitle}>Delicious Steak</h3>
+                  <p className={css.mbr_text}>
+                    (Lorem ipsum dolor sit amet, consectetur){" "}
+                  </p>
+                </div>
+                {/* <div className="list_widget">
                             <h3 className={css.mbr_section_subtitle}>La Pizza Pasta</h3>
                             <p className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur)</p>
                         </div> */}
-                        <div className="list_widget">
-                            <h3 className={css.mbr_section_subtitle}>Sweet Desert</h3>
-                            <p className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur)</p>
-                        </div>
-                        <div className="list_widget">
-                            <h3 className={css.mbr_section_subtitle}>Shot and Drink</h3>
-                            <p  className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur)</p>
-                        </div>
-                        <div  className="list_widget"><p className={css.listBtn}><a href="index.html" className="text-primary">VIEW MENU</a></p>
-
-                        </div>
-
-                        </div>
+                <div className="list_widget">
+                  <h3 className={css.mbr_section_subtitle}>Sweet Desert</h3>
+                  <p className={css.mbr_text}>
+                    (Lorem ipsum dolor sit amet, consectetur)
+                  </p>
                 </div>
-            </div>
-
-            <div className="col-12 col-md-3 col-lg-4">
-                <div className="image_right">
-                <Image
-                src={chole}
-                alt=""
-                objectFit="cover"
-                layout="intrinsic"
-              />
+                <div className="list_widget">
+                  <h3 className={css.mbr_section_subtitle}>Shot and Drink</h3>
+                  <p className={css.mbr_text}>
+                    (Lorem ipsum dolor sit amet, consectetur)
+                  </p>
                 </div>
+                <div className="list_widget">
+                  <p className={css.listBtn}>
+                    <a href="index.html" className="text-primary">
+                      VIEW MENU
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div className="col-12 col-md-3 col-lg-4">
+            <div className="image_right">
+              <Image src={chole} alt="" objectFit="cover" layout="intrinsic" />
+            </div>
+          </div>
         </div>
-</section>
+      </section>
     </div>
   );
 }

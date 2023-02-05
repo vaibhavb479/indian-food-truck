@@ -62,30 +62,30 @@ export default function Food({ food }) {
           <div className={css.varients}>
             <span>Category</span>
             <div className={css.sizeVarients}>
-            {/* {food?.MenuType[0]=='Veg'?  */}
+            {food?.MenuType[0]=='Veg'? 
             <div 
                 onClick={() => setCategory(0)}
                 className={Category === 0 ? css.selected : ""}
               >
                 Veg
               </div>
-              {/* :""} */}
-              {/* {food?.MenuType[1]=='Egg'?  */}
+              :""}
+            {food?.MenuType[1]=='Egg'?
               <div
                 onClick={() => setCategory(1)}
                 className={Category === 1 ? css.selected : ""}
               >
                 Egg
               </div>
-              {/* :""} */}
-              {/* {food?.MenuType[2]=='Nonveg'? */}
+              :""}
+              {food?.MenuType[2]=='Nonveg'? 
               <div 
                 onClick={() => setCategory(2)}
                 className={Category === 2 ? css.selected : ""}
               >
                 Chicken
               </div>
-              {/* :""} */}
+              :""}
             </div>
           </div>
 

@@ -31,10 +31,17 @@ export default {
       type: "array",
       of: [{ type: "number" }],
     },
+
     {
       name: "details",
       title: "details",
       type: "string",
+    },
+{
+      name: "menuType",
+      title: "Menu Type",
+      type: "array",
+      of: [{ type: "string" }],
     },
   ],
 };

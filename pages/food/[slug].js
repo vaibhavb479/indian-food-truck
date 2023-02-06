@@ -70,7 +70,7 @@ export default function Food({ food }) {
                 Veg
               </div>
               :""}
-             {food?.MenuType[1]=='Egg'? 
+            {food?.MenuType[1]=='Egg'?
               <div
                 onClick={() => setCategory(1)}
                 className={Category === 1 ? css.selected : ""}
@@ -78,14 +78,14 @@ export default function Food({ food }) {
                 Egg
               </div>
               :""}
-              {food?.MenuType[2]=='Nonveg'?
+              {food?.MenuType[2]=='Nonveg'? 
               <div 
                 onClick={() => setCategory(2)}
                 className={Category === 2 ? css.selected : ""}
               >
                 Chicken
               </div>
-            :""}
+              :""}
             </div>
           </div>
 

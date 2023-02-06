@@ -143,9 +143,12 @@ export default function Footer() {
           </p>
         </div>
       </footer>
-      <div className={css.button_sticky} onClick={windowScroll}>
+      <Link href="/menuList"><div className={css.button_sticky}>
+
         <i className="fa fa-cutlery"></i>Order Online
+       
       </div>
+      </Link>
     </>
   );
 }

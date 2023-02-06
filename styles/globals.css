@@ -168,12 +168,17 @@ i {
   display: block;
   position: relative;
   left: 0;
-  z-index: 1;
+  z-index: 0000;
 }
 .cid-sK8XwkDPAS img {
   width: 100%;
   object-fit: cover;
 }
+@media (min-width: 992px){
+  .aboutSec2{
+    padding-left:5rem!important;
+  }
+  }
 
 
 

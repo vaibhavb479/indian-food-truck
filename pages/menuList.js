@@ -1,12 +1,28 @@
-import Layout from "../components/Layout";
-import css from "../styles/About.module.css";
+
+import Layout from "../components/Layout"
+import css from "../styles/Home.module.css";
+import { client } from "../lib/client";
 import MenuList from "../components/MenuList";
-export default function About() {
+ import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
+export default function About({ foods }) {
+  
   return (
-    <Layout className="mt-4">
+    <Layout>
       <div className={css.container}>
-        <MenuList />
+          <MenuList foods={foods} />
+     
       </div>
     </Layout>
   );
 }
+
+export const getServerSideProps = async () => {
+  const query = '*[_type == "food"]';
+  const foods = await client.fetch(query);
+  return {
+    props: {
+      foods,
+    },
+  };
+};

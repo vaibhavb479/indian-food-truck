@@ -69,10 +69,7 @@ export default function AboutUs() {
           <div className="col-md-5 col-lg-7 col-xl-5 col-xs-7 col-sm-10 pl-5 m-auto">
             <div className="row">
             <div className="col-md-12 aboutSec2">
-            {/* <div className="col-md-1"></div> */}
-            {/* <div className="col-md-1"></div>
-            <div className="col-md-10"> */}
-
+          
             <h5 className="text-center">ABOUT US</h5>
             We are group of professional chefs decide to open a small restaurant
             operation here in Sunnyvale, believed in ourselves to maintain
@@ -83,8 +80,7 @@ export default function AboutUs() {
             and best Chai we also had the same missing feel. “INDIAN STREET FOOD
             TRUCK” is one of the must try spot where you all should stop by and
             give us your support.
-          
-            {/* <div className="col-md-1"></div> */}
+     
               </div>
             </div>
          

@@ -27,7 +27,7 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@
 .miniPara {
   color: var(--gray);
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .btnColor {

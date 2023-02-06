@@ -45,7 +45,7 @@ export default function AboutUs() {
     <div className={css.container}>
       <section className={css.imgSection}>
         <div className="col-md-12 mt-5">
-          <Image src={foodTruck17} alt="" layout="intrinsic" />
+          <Image src={foodTruck16} alt="" layout="intrinsic" />
         </div>
       </section>
       <Services />

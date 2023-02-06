@@ -1,4 +1,3 @@
-
 import css from "../styles/MenuList.module.css";
 import Image from "next/image";
 import { urlFor } from "../lib/client";
@@ -8,7 +7,7 @@ export default function MenuList({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>Our Menus 🍒</span>
+        <span>Our Menu 🍒</span>
         {/* <span>Menu That Always</span>
         <span>Make You Fall in Love</span> */}
       </div>

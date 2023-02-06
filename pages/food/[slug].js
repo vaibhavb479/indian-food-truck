@@ -57,35 +57,42 @@ export default function Food({ food }) {
           <span>{food.details}</span>
 
           <span>
-            <span style={{ color: "var(--themeRed)" }}>$</span> {food.price[Category]}
+            <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
+            {food.price[Category]}
           </span>
           <div className={css.varients}>
             <span>Category</span>
             <div className={css.sizeVarients}>
-            {food?.MenuType[0]=='Veg'? 
-            <div 
-                onClick={() => setCategory(0)}
-                className={Category === 0 ? css.selected : ""}
-              >
-                Veg
-              </div>
-              :""}
-            {food?.MenuType[1]=='Egg'?
-              <div
-                onClick={() => setCategory(1)}
-                className={Category === 1 ? css.selected : ""}
-              >
-                Egg
-              </div>
-              :""}
-              {food?.MenuType[2]=='Nonveg'? 
-              <div 
-                onClick={() => setCategory(2)}
-                className={Category === 2 ? css.selected : ""}
-              >
-                Chicken
-              </div>
-              :""}
+              {food?.menuType[0] == "Veg" ? (
+                <div
+                  onClick={() => setCategory(0)}
+                  className={Category === 0 ? css.selected : ""}
+                >
+                  Veg
+                </div>
+              ) : (
+                ""
+              )}
+              {food?.menuType[1] == "Egg" ? (
+                <div
+                  onClick={() => setCategory(1)}
+                  className={Category === 1 ? css.selected : ""}
+                >
+                  Egg
+                </div>
+              ) : (
+                ""
+              )}
+              {food?.menuType[2] == "Chicken" ? (
+                <div
+                  onClick={() => setCategory(2)}
+                  className={Category === 2 ? css.selected : ""}
+                >
+                  Chicken
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
 
@@ -119,7 +126,6 @@ export default function Food({ food }) {
           {/* Button */}
           {/* <div className={`btn ${css.btn}`} onClick={addToCart}> */}
           <div className="btnColor" onClick={addToCart}>
-
             Add to Cart
           </div>
         </div>

@@ -145,7 +145,7 @@ export default function Footer() {
       </footer>
       <Link href="/menuList">
         <div className={css.button_sticky}>
-          <i className="fa fa-cutlery"></i>Order Online
+          <i>🥘</i>Order Online
         </div>
       </Link>
     </>

@@ -1,3 +1,9 @@
+.container {
+  background-color: #fdecec;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 5rem;
+}
 .left {
   display: flex;
   flex-direction: column;
@@ -15,9 +21,9 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  background-color: var(--pink);
-  margin-top: 3rem;
+  background-color: #fff6f6;
   padding: 1rem;
+  margin-bottom: 3rem;
   border-radius: 2rem;
   font-size: 0.8rem;
   color: var(--themeRed);
@@ -111,13 +117,13 @@
   .Tea {
     display: flex;
     gap: 0.5rem;
-    background-color: white;
+    background-color: #fff6f6;
     box-shadow: var(--shadow);
     padding: 0.5rem;
     border-radius: 0.5rem;
     position: absolute;
-    bottom: 0.5rem;
-    left: 25rem;
+    bottom: 21rem;
+    left: 26rem;
     width: max-content;
   }
 }

@@ -136,18 +136,17 @@ export default function Footer() {
 
         <div className={css.legal}>
           <p>
-            © 2023 by Dmarc Creation. Coded and secured by{" "}
+            © 2023 by DeMarc Creation. Coded and Secured by{" "}
             <a href="https://www.aavians.com/" target="_blank" rel="noreferrer">
               AAVIANS
             </a>
           </p>
         </div>
       </footer>
-      <Link href="/menuList"><div className={css.button_sticky}>
-
-        <i className="fa fa-cutlery"></i>Order Online
-       
-      </div>
+      <Link href="/menuList">
+        <div className={css.button_sticky}>
+          <i className="fa fa-cutlery"></i>Order Online
+        </div>
       </Link>
     </>
   );

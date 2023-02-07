@@ -55,7 +55,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <hr></hr>
     </div>
   );
 }

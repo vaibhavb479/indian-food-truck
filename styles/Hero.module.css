@@ -59,12 +59,15 @@
   position: relative;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 765px) {  
   .imageContainer {
     /* width: 38rem; */
     position: relative;
     /* left: 10rem;
   top: 4rem; */
+  }
+  .heroText {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 830px) {
@@ -112,6 +115,9 @@
   .Tea {
     display: none;
   }
+  .heroText {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 825px) {
   .Tea {
@@ -148,9 +154,9 @@
 
 @media only screen and (max-width: 820px) and (min-width: 768px) {
   .imageContainer {
-    width: 24rem !important;
+    width: 20rem !important;
     position: absolute !important;
-    left: 1rem !important;
+    right: 0rem !important;
     margin-top: 6rem !important;
   }
 }

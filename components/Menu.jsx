@@ -7,7 +7,7 @@ export default function Menu({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>Our Popular Menu 🍒</span>
+        <span>People's Favourite🍕</span>
         {/* <span>Menu That Always</span>
         <span>Make You Fall in Love</span> */}
       </div>

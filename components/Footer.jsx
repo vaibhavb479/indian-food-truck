@@ -7,39 +7,6 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 export default function Footer() {
-  // const tooltip = (
-  //   <Tooltip id="tooltip">
-  //     <strong>
-  //       Yes, we take party orders in our nearby locations. For more information,
-  //       please visit our location or contact us via email.
-  //     </strong>
-  //   </Tooltip>
-  // );
-
-  // const tooltip1 = (
-  //   <Tooltip id="tooltip1">
-  //     <strong>
-  //       We use secure servers and encryption to protect your personal and
-  //       payment information. However, it is always a good idea to take
-  //       additional precautions, such as making sure that the website is using a
-  //       secure connection (look for https in the URL) and avoiding public WiFi
-  //       networks when entering sensitive information.
-  //     </strong>
-  //   </Tooltip>
-  // );
-  // const tooltip2 = (
-  //   <Tooltip id="tooltip1">
-  //     <strong>
-  //       {" "}
-  //       To place an order through us, you need to select the items you wish to
-  //       purchase, choose a payment method, and confirm your order.
-  //     </strong>
-  //   </Tooltip>
-  // );
-  // const windowScroll = () => {
-  //   window.scrollTo(0, 500);
-  // };
-
   return (
     <>
       <footer className={css.footer}>
@@ -51,39 +18,13 @@ export default function Footer() {
               <span>Indian Food Truck</span>
             </h1>
           </Link>
-          <span>We're one of the must try spot where you all should stop by and
-            give us your support</span>
+          <span>
+            We're one of the must try spot where you all should stop by and give
+            us your support
+          </span>
         </div>
 
         <ul className={css.footer__nav}>
-          {/* <li className={css.nav__item}>
-          <h2 className={css.nav__title}>FAQ</h2>
-
-          <ul className={css.nav__ul}>
-            <li>
-              <OverlayTrigger placement="bottom" overlay={tooltip}>
-                <a href="#">Do you accept party orders?</a>
-              </OverlayTrigger>
-            </li>
-            <li>
-              <OverlayTrigger placement="bottom" overlay={tooltip1}>
-                <a href="#">
-                  Is it safe to enter my payment information on the online
-                  ordering system?{" "}
-                </a>
-              </OverlayTrigger>
-            </li>
-            <li>
-              <OverlayTrigger placement="bottom" overlay={tooltip2}>
-                <a href="#">
-                  How do I place an order through the online ordering system?
-                </a>
-              </OverlayTrigger>
-            </li>
-            <li></li>
-          </ul>
-        </li> */}
-
           <li className={css.nav__item}>
             <h2 className={css.nav__title}>Social Media</h2>
 
@@ -111,26 +52,26 @@ export default function Footer() {
           </li>
           <li className={css.nav__item}>
             <h2 className={css.nav__title}>Contact Us</h2>
-           
-              <p className={css.contact__footer}>
-                <a
-                  className={css.footer__btn}
-                  href="mailto:contact@indianfoodtruck.online"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Email 📧
-                </a>
-                <a
-                  className={css.footer__btn}
-                  href="https://wa.link/pde07x"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Contact ☎️
-                </a>
-              </p>
-              <address>
+
+            <p className={css.contact__footer}>
+              <a
+                className={css.footer__btn}
+                href="mailto:contact@indianfoodtruck.online"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Email 📧
+              </a>
+              <a
+                className={css.footer__btn}
+                href="https://wa.link/pde07x"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact ☎️
+              </a>
+            </p>
+            <address>
               #603 Old San Francisco Road, Sunnyvale, CA-94086
               <br />
             </address>

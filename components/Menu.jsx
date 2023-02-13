@@ -7,13 +7,10 @@ export default function Menu({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>People's Favourite🍕</span>
-        {/* <span>Menu That Always</span>
-        <span>Make You Fall in Love</span> */}
+        <span>Most Preferred Deli🍕</span>
       </div>
 
       <div className={css.menu}>
-        {/*foods*/}
         {foods.map((food, id) => {
           const src = urlFor(food.image).url();
           return (

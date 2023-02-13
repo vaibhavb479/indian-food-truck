@@ -53,7 +53,7 @@ export default function Services() {
         <div className="container-fluid">
           <div className="row justify-content-center backgroundColor">
             <div className="col-lg-4 col-md-12 md-pb mobileView">
-              <Image src={man} alt="" classNameName="" />
+              <Image src={man} alt="" className="" />
             </div>
 
             <div className="col-lg-8 col-md-12 align-left my-auto">
@@ -151,9 +151,9 @@ export default function Services() {
 
       <section className="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
         <div className="container-fluid">
-          <div classNameName="row mt-5  cateringSec">
+          <div className="row mt-5  cateringSec">
             <div
-              classNameName="col-md-12 pt-4"
+              className="col-md-12 pt-4"
               style={{ display: "flex", justifyContent: "center" }}
             >
               <Image
@@ -184,7 +184,7 @@ export default function Services() {
                 </thead>
                 <tbody>
                   {menuList.map((item, index) => (
-                    <tr data-index={index}>
+                    <tr key={index} data-index={index}>
                       <td>
                         <div className="">
                           <Image

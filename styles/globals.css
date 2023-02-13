@@ -262,7 +262,7 @@ display: flex;
   border-radius: 20px;
 }
 .mobileView{
-  margin-top: 3.6rem;
+  margin-top: 3.8rem!important;
 }
 @media (max-width:992px){
 .mobileView{

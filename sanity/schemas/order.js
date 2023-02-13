@@ -27,7 +27,12 @@ export default {
         maxLength: 100,
       },
     },
-
+    {
+      name: "orderDetails",
+      title: "Order Details",
+      type: "array",
+      of: [{ type: "string" }],
+    },
     {
       name: "method",
       title: "Method",

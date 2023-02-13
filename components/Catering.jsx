@@ -49,7 +49,7 @@ export default function Services() {
     <>
       <div className={css.cateringHeading}></div>
 
-      <section class="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
+      <section class="features3 cid-s5yYv1LlBg mt-3" id="features03-2">
         <div class="container-fluid">
           <div class="row justify-content-center backgroundColor">
             <div class="col-lg-4 col-md-12 md-pb mobileView">

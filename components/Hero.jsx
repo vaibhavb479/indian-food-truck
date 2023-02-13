@@ -1,7 +1,7 @@
 import Image from "next/image";
 import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
-import HeroImage from "../assets/HeroTruck.png";
+import HeroImage from "../assets/3dBanner.png";
 import { UilPhone } from "@iconscout/react-unicons";
 import Tea1 from "../assets/chai.png";
 import Link from "next/link";
@@ -55,7 +55,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <hr></hr>
     </div>
   );
 }

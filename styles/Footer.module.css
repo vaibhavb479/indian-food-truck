@@ -159,13 +159,13 @@
       flex: 1;
     }
     
-    /* .nav__item--extra {
-      flex-grow: 2;
-    } */
-    
-    .footer__addr {
-      /* flex: 1 0px; */
+    .nav__item {
+      padding: 1rem;
     }
+    
+    /* .footer__addr {
+      flex: 1 0px;
+    } */
     
     .footer__nav {
       flex: 2 0px;
@@ -174,7 +174,7 @@
 
 .contact__footer{
     display: flex;
-    gap:1rem;
+    gap:0.7rem;
 }
 
 .contact__footer a{
@@ -185,14 +185,14 @@
   
   .nav__ulmedia{
     display: flex;
-    gap: 1.5rem;
+    gap: 1.6rem;
   }
   .nav__ulmedia i{
-      font-size: 14px;
+      font-size: 15px;
       border-radius: 50%;
-      border: 1px solid #0693e3;
+      border: 1px solid #1e5c80;
       padding: 5px 6px;
-      background-color: #0693e3;
+      background-color: #1e5c80;
       color: white;
     }
   
@@ -212,4 +212,57 @@
   .legal i:hover {
     cursor: pointer;
     transform: scale(1.2);
+  }
+  .button_sticky{
+    cursor: pointer;
+  }
+  .button_sticky i{
+    padding: 15px 15px;
+    border-radius: 50px;
+    background: red;
+    font-size: 18px;
+    position: absolute;
+    left: -35px;
+    top: -8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+
+  }
+  @media screen and (max-width:750px) {
+    .button_sticky{
+      float: left;
+      position: fixed;
+      bottom: 3.5rem;
+      right: 1rem;
+      color:white;
+      background: red;
+      border-radius:15px;
+      padding: 10px 25px 10px 25px;
+      font-size: 15px;
+      font-weight: 550;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    }
+    .nav__item {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+  }
+  @media screen and (min-width:768px) {
+    .button_sticky{
+      float: left;
+      position: fixed;
+      bottom: 3.5rem;
+      right: 3rem;
+      color:white;
+      background: red;
+      border-radius:15px;
+      padding: 10px 25px 10px 25px;
+      font-size: 15px;
+      font-weight: 550;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    }
   }

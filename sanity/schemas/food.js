@@ -37,11 +37,16 @@ export default {
       title: "details",
       type: "string",
     },
-{
+    {
       name: "menuType",
       title: "Menu Type",
       type: "array",
       of: [{ type: "string" }],
+    },
+    {
+      name: "favMenu",
+      title: "Favourite Menu",
+      type: "string",
     },
   ],
 };

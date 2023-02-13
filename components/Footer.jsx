@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
 import css from "../styles/Footer.module.css";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 export default function Footer() {
   return (

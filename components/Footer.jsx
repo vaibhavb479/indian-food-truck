@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
 import css from "../styles/Footer.module.css";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 export default function Footer() {
   return (
@@ -19,8 +17,8 @@ export default function Footer() {
             </h1>
           </Link>
           <span>
-            We're one of the must try spot where you all should stop by and give
-            us your support
+            We are one of the must try spot where you all should stop by and
+            give us your support
           </span>
         </div>
 

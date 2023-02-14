@@ -7,7 +7,6 @@ import chole from "../assets/New Folder/chole.jpg";
 import chai from "../assets/New Folder/chai.jpg";
 import catering from "../assets/images.png";
 import man from "../assets/serve.png";
-
 import { Center } from "@mantine/core";
 
 export default function Services() {
@@ -170,7 +169,10 @@ export default function Services() {
             >
               <table
                 className="table"
-                style={{ textAlign: "Center", color: "#fff" }}
+                style={{
+                  textAlign: "Center",
+                  color: "#fff",
+                }}
               >
                 <thead className="">
                   <tr>

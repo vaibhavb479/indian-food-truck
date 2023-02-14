@@ -1,20 +1,16 @@
-.cateringHeading{
+.cateringHeading {
   color: white;
-    font-size: 2rem;
-    font-family: Gabriola;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-family: Gabriola;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 600;
 }
 .container {
   display: block;
   position: relative;
   padding: 18px;
-  background-repeat: no-repeat;
-
 }
-
-

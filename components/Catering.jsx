@@ -49,26 +49,26 @@ export default function Services() {
     <>
       <div className={css.cateringHeading}></div>
 
-      <section class="features3 cid-s5yYv1LlBg mt-3" id="features03-2">
-        <div class="container-fluid">
-          <div class="row justify-content-center backgroundColor">
-            <div class="col-lg-4 col-md-12 md-pb mobileView">
+      <section className="features3 cid-s5yYv1LlBg mt-3" id="features03-2">
+        <div className="container-fluid">
+          <div className="row justify-content-center backgroundColor">
+            <div className="col-lg-4 col-md-12 md-pb mobileView">
               <Image src={man} alt="" className="" />
             </div>
 
-            <div class="col-lg-8 col-md-12 align-left my-auto">
-              <div class="wrapper">
-                <div class="row p0 mbr-white align-left">
-                  <div class="col-lg-12">
-                    <h3 class="main-title align-left mbr-fonts-style pb-3">
+            <div className="col-lg-8 col-md-12 align-left my-auto">
+              <div className="wrapper">
+                <div className="row p0 mbr-white align-left">
+                  <div className="col-lg-12">
+                    <h3 className="main-title align-left mbr-fonts-style pb-3">
                       <strong>Catering Services</strong>
                     </h3>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           {" "}
                           We do custmized menu From all over India of both Veg
                           and Non-Veg.
@@ -76,64 +76,64 @@ export default function Services() {
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           {" "}
                           We do catering from 10 ppl minimum.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           We Come on-site catering to your Location and cook
                           Live.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           We provide utensil and Catering wear along with
                           helpers and waitresses.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           We do Catering all over Bay-Area.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           We do Breakfast, Brunch, Lunch, Tea time, Dinner.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="card col-12 col-md-12 col-lg-6 md-pb">
-                    <div class="card-wrapper">
-                      <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
-                      <div class="card-box">
-                        <p class="card-text mbr-fonts-style display-7">
+                  <div className="card col-12 col-md-12 col-lg-6 md-pb">
+                    <div className="card-wrapper">
+                      <span className="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                      <div className="card-box">
+                        <p className="card-text mbr-fonts-style display-7">
                           {" "}
                           Contact us All your Festivals, House, Warming,
                           Weddings, Baby Showers, Birthday Party, Anniversaries,
@@ -149,8 +149,8 @@ export default function Services() {
         </div>
       </section>
 
-      <section class="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
-        <div class="container-fluid">
+      <section className="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
+        <div className="container-fluid">
           <div className="row mt-5  cateringSec">
             <div
               className="col-md-12 pt-4"

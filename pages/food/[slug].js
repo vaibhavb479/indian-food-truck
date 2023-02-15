@@ -63,12 +63,15 @@ export default function Food({ food }) {
           <div className={css.varients}>
             <span>Category</span>
             <div className={css.sizeVarients}>
-            {
-                food?.menuType.map((item , index)=>
-                  <div  onClick={() => setCategory(index)}
-                  className={Category === index ? css.selected : ""}>{item}</div>
-                )
-              }
+              {food?.menuType.map((item, index) => (
+                <div
+                  key={item.id}
+                  onClick={() => setCategory(index)}
+                  className={Category === index ? css.selected : ""}
+                >
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
 

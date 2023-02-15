@@ -65,7 +65,7 @@ export default function Food({ food }) {
             <div className={css.sizeVarients}>
               {food?.menuType.map((item, index) => (
                 <div
-                  key={item.id}
+                  key={item}
                   onClick={() => setCategory(index)}
                   className={Category === index ? css.selected : ""}
                 >

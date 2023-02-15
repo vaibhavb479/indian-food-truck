@@ -1,7 +1,6 @@
 .cateringHeading {
   color: white;
   font-size: 2rem;
-  font-family: Gabriola;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,5 +11,6 @@
 .container {
   display: block;
   position: relative;
+  font-family: "Poppins", sans-serif;
   padding: 18px;
 }

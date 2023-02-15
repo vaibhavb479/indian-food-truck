@@ -48,7 +48,9 @@ export default function AboutUs() {
           <Image src={foodTruck17} alt="" layout="intrinsic" />
         </div>
       </section>
+
       <Services />
+
       <section className="mt-5 p-20">
         {/* <div className="col-md-12">
           <h5 className="text-center">ABOUT US</h5>

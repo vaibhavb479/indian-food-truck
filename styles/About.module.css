@@ -1,6 +1,4 @@
 .container {
-  /* display: block;
-  position: relative; */
   padding-top: 1.1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
@@ -126,7 +124,7 @@
 }
 .imgSection span {
   display: block !important;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
 }
 
 .aboutImg span img {

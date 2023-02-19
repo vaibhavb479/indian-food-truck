@@ -4,12 +4,15 @@ import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s4 from "../assets/s4.png";
 import chole from "../assets/New Folder/chole.jpg";
-import chai from "../assets/New Folder/chai.jpg";
+import faluda from "../assets/New Folder/faluda.jpg";
 import catering from "../assets/images.png";
 import man from "../assets/serve.png";
 import { Center } from "@mantine/core";
+import Food from "../pages/food/[slug]";
+import Link from "next/link";
 
 export default function Services() {
+
   const menuList = [
     {
       img: chole,
@@ -164,24 +167,25 @@ export default function Services() {
               />
             </div>
             <div
-              className="col-md-12 card p-2 table-responsive"
-              style={{ border: "3px solid white" }}
+              className="col-md-8 card p-2 table-responsive mb-5"
+              style={{ boxShadow: "rgb(0 0 0 / 35%) 0px 5px 15px",  margin: 'auto' }}
             >
               <table
                 className="table"
                 style={{
                   textAlign: "Center",
-                  color: "#fff",
+                  
                 }}
               >
                 <thead className="">
                   <tr>
                     <th>Image</th>
                     <th>Menu</th>
-                    <th>Small Tray</th>
+                    <th>Action</th>
+                    {/* <th>Small Tray</th>
                     <th>Half Tray</th>
                     <th>Medium Tray</th>
-                    <th>Full Tray</th>
+                    <th>Full Tray</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -190,18 +194,21 @@ export default function Services() {
                       <td>
                         <div className="">
                           <Image
+                           className="rounded-circle"
                             src={item.img}
                             alt=""
                             width="40px"
                             height="30px"
+                            style={{boxShadow: "#181818cf 0px 3px 2px -1px"}}
                           />
                         </div>
                       </td>
                       <td>{item.name}</td>
-                      <td>{item.smallTray}</td>
+                      <td> <Link href="/cateringList">See More</Link></td>
+                      {/* <td>{item.smallTray}</td>
                       <td>{item.halfTray}</td>
                       <td>{item.mediumTary}</td>
-                      <td>{item.fullTray}</td>
+                      <td>{item.fullTray}</td> */}
                     </tr>
                   ))}
                 </tbody>

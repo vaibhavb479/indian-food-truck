@@ -12,7 +12,8 @@ export default function Menu({ foods }) {
 
       <div className={css.menu}>
         {foods.map((food, id) => {
-          const src = urlFor(food.image).url();
+          if(food.favMenu !=null && food.favMenu !=undefined){
+           const src = urlFor(food.image).url();
           return (
             <div className={css.food} key={id}>
               <Link href={`./food/${food.slug.current}`}>
@@ -34,6 +35,7 @@ export default function Menu({ foods }) {
               </span>
             </div>
           );
+        }
         })}
       </div>
     </div>

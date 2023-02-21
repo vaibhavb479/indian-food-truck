@@ -71,7 +71,7 @@
   .imageContainer {
     display: flex;
     width: 23rem;
-    left: -3rem !important;
+    left: -5rem !important;
     margin-top: -4rem;
     margin-bottom: -3rem;
     position: relative;
@@ -90,7 +90,7 @@
   .imageContainer {
     width: 34rem;
     position: absolute;
-    margin: -5rem;
+    margin: -6rem;
   }
 }
 

@@ -17,8 +17,8 @@ export default function Footer() {
             </h1>
           </Link>
           <span>
-            We are one of the must try spot where you all should stop by and
-            give us your support
+            We are one of the must try spot, where you all should stop by and
+            give us your support.
           </span>
         </div>
 

@@ -215,7 +215,7 @@ i {
 
 .mobi-mbri {
   font-family: "Moririse2" !important;
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -511,7 +511,7 @@ ul {
   padding: 10px 0px;
   color: #fff;
 }
-.cateringTable{
-text-align: center!important;
-color: white!important;
+.cateringTable {
+  text-align: center !important;
+  color: white !important;
 }

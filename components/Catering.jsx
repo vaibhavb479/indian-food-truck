@@ -1,18 +1,11 @@
 import Image from "next/image";
 import css from "../styles/Catering.module.css";
-import s1 from "../assets/s1.png";
-import s2 from "../assets/s2.png";
-import s4 from "../assets/s4.png";
 import chole from "../assets/New Folder/chole.jpg";
-import faluda from "../assets/New Folder/faluda.jpg";
-import catering from "../assets/images.png";
+import catering from "../assets/bflogo.png";
 import man from "../assets/serve.png";
-import { Center } from "@mantine/core";
-import Food from "../pages/food/[slug]";
 import Link from "next/link";
 
 export default function Services() {
-
   const menuList = [
     {
       img: chole,
@@ -168,13 +161,15 @@ export default function Services() {
             </div>
             <div
               className="col-md-8 card p-2 table-responsive mb-5"
-              style={{ boxShadow: "rgb(0 0 0 / 35%) 0px 5px 15px",  margin: 'auto' }}
+              style={{
+                boxShadow: "rgb(0 0 0 / 35%) 0px 5px 15px",
+                margin: "auto",
+              }}
             >
               <table
                 className="table"
                 style={{
                   textAlign: "Center",
-                  
                 }}
               >
                 <thead className="">
@@ -194,17 +189,20 @@ export default function Services() {
                       <td>
                         <div className="">
                           <Image
-                           className="rounded-circle"
+                            className=""
                             src={item.img}
                             alt=""
-                            width="40px"
+                            width="50px"
                             height="30px"
-                            style={{boxShadow: "#181818cf 0px 3px 2px -1px"}}
+                            style={{ boxShadow: "#181818cf 0px 3px 2px -1px" }}
                           />
                         </div>
                       </td>
                       <td>{item.name}</td>
-                      <td> <Link href="/cateringList">See More</Link></td>
+                      <td>
+                        {" "}
+                        <Link href="/cateringList">See More</Link>
+                      </td>
                       {/* <td>{item.smallTray}</td>
                       <td>{item.halfTray}</td>
                       <td>{item.mediumTary}</td>

@@ -354,11 +354,11 @@ textarea {
 a {
   color: inherit;
 }
-a:hover,
+/* a:hover,
 a:focus {
   text-decoration: none !important;
   color: inherit !important;
-}
+} */
 ul {
   margin: 0px;
   padding: 0px;
@@ -502,15 +502,7 @@ ul {
 .pricing-table-3 .pricing-table-ul i {
   margin-right: 10px;
 }
-/* .pricing-table-3.basic .pricing-table-ul i{
-color:#28b6f6;
-}
-.pricing-table-3.premium .pricing-table-ul .fa{
-color:#ff9f00;
-}
-.pricing-table-3.business .pricing-table-ul .fa{
-color:#c3185c;
-} */
+
 .pricing-table-3 .view-more {
   margin: 10px 20px;
   display: block;
@@ -518,4 +510,8 @@ color:#c3185c;
   background-color: #e79898;
   padding: 10px 0px;
   color: #fff;
+}
+.cateringTable{
+text-align: center!important;
+color: white!important;
 }

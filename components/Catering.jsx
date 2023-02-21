@@ -167,20 +167,13 @@ export default function Services() {
               }}
             >
               <table
-                className="table"
-                style={{
-                  textAlign: "Center",
-                }}
+                className="table cateringTable"
               >
                 <thead className="">
                   <tr>
                     <th>Image</th>
                     <th>Menu</th>
                     <th>Action</th>
-                    {/* <th>Small Tray</th>
-                    <th>Half Tray</th>
-                    <th>Medium Tray</th>
-                    <th>Full Tray</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -203,10 +196,6 @@ export default function Services() {
                         {" "}
                         <Link href="/cateringList">See More</Link>
                       </td>
-                      {/* <td>{item.smallTray}</td>
-                      <td>{item.halfTray}</td>
-                      <td>{item.mediumTary}</td>
-                      <td>{item.fullTray}</td> */}
                     </tr>
                   ))}
                 </tbody>

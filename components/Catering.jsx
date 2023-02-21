@@ -194,11 +194,12 @@ export default function Services() {
                       <td>{item.name}</td>
                       <td>
                         {" "}
-                        <Link href="/cateringList">See More</Link>
+                        <Link href="/cateringList"><button type="button" className="button-table">View</button></Link>
                       </td>
                     </tr>
                   ))}
                 </tbody>
+                
               </table>
             </div>
           </div>

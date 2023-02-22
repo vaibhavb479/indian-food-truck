@@ -187,62 +187,6 @@ export default function AboutUs() {
           </Carousel>
         </div>
       </section>
-      <section
-        data-bs-version="5.1"
-        className="features5 cid-sK8XwkDPAS"
-        id="features5-7"
-      >
-        <div className="two_background"></div>
-
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-3 col-lg-4">
-            <div className="image_left">
-              <Image src={mango} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-          </div>
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="main_header">
-              <h2 className={css.mbr_section_title}>SPECIALS</h2>
-              <div className="menu_widget">
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Delicious Steak</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur){" "}
-                  </p>
-                </div>
-                {/* <div className="list_widget">
-                            <h3 className={css.mbr_section_subtitle}>La Pizza Pasta</h3>
-                            <p className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur)</p>
-                        </div> */}
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Sweet Desert</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur)
-                  </p>
-                </div>
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Shot and Drink</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur)
-                  </p>
-                </div>
-                <div className="list_widget">
-                  <p className={css.listBtn}>
-                    {/* <a href="index.html" className="text-primary"> */}
-                    <Link href="/menuList"> VIEW MENU</Link>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-3 col-lg-4">
-            <div className="image_right">
-              <Image src={chole} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

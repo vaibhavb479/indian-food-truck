@@ -4,7 +4,7 @@ import chole from "../assets/New Folder/chole.jpg";
 import catering from "../assets/bflogo.png";
 import man from "../assets/serve.png";
 import Link from "next/link";
-
+import imageBg from "../assets/b1.jpg";
 export default function Services() {
   const menuList = [
     {
@@ -145,8 +145,20 @@ export default function Services() {
       </section>
 
       <section className="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
-        <div className="container-fluid">
-          <div className="row mt-5 cateringSec">
+      <div class="card bg-dark text-white">
+  {/* <img src="../assets/b1.jpg" class="card-img" alt="Stony Beach"/> */}
+  <Image
+                src={imageBg}
+                alt=""/>
+  <div class="card-img-overlay">
+    {/* <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      This is a wider card with supporting text below as a natural lead-in to additional
+      content. This content is a little bit longer.
+    </p>
+    <p class="card-text">Last updated 3 mins ago</p> */}
+     <div className="container-fluid">
+          <div className="row cateringSec">
             <div
               className="col-md-12 pt-4"
               style={{ display: "flex", justifyContent: "center" }}
@@ -204,6 +216,9 @@ export default function Services() {
             </div>
           </div>
         </div>
+  </div>
+</div>
+       
       </section>
     </>
   );

@@ -11,6 +11,7 @@ export default async function handler(req, res) {
             name: newOrder.name,
             address: newOrder.address,
             phone: newOrder.phone,
+            orderDetails: newOrder.orderDetails,
             total: newOrder.total,
             method: newOrder.method,
             status: 1,

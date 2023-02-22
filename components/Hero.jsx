@@ -1,7 +1,7 @@
 import Image from "next/image";
 import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
-import HeroImage from "../assets/HeroTruck.png";
+import HeroImage from "../assets/3dBanner.png";
 import { UilPhone } from "@iconscout/react-unicons";
 import Tea1 from "../assets/chai.png";
 import Link from "next/link";
@@ -15,14 +15,11 @@ export default function Hero() {
             <span>More than Faster</span>
             <Image src={Cherry} alt="" width={40} height={25} />
           </div>
-
           <div className={css.heroText}>
             <span>Welcome to</span>
             <span style={{ color: "var(--themeRed)" }}>Indian Street</span>
             <span> Food Truck</span>
           </div>
-          <span></span>
-          {/* <div className={css.miniText}>Street food truck</div> */}
           <br />
           <span className={css.miniPara}>
             All Street Food Lovers Are Heartedly Invited 🥘
@@ -55,7 +52,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <hr></hr>
     </div>
   );
 }

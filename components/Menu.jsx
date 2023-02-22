@@ -7,15 +7,13 @@ export default function Menu({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>Our Popular Menu 🍒</span>
-        {/* <span>Menu That Always</span>
-        <span>Make You Fall in Love</span> */}
+        <span>Most Preferred Deli🍕</span>
       </div>
 
       <div className={css.menu}>
-        {/*foods*/}
         {foods.map((food, id) => {
-          const src = urlFor(food.image).url();
+          if(food.favMenu !=null && food.favMenu !=undefined){
+           const src = urlFor(food.image).url();
           return (
             <div className={css.food} key={id}>
               <Link href={`./food/${food.slug.current}`}>
@@ -37,6 +35,7 @@ export default function Menu({ foods }) {
               </span>
             </div>
           );
+        }
         })}
       </div>
     </div>

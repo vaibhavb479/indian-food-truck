@@ -1,0 +1,16 @@
+.cateringHeading {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+.container {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 18px;
+}

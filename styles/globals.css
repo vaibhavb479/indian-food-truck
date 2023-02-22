@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
+/* @import url("../assets/b2.jpg"); */
 html,
 body {
   margin: 0;
@@ -250,10 +250,11 @@ i {
   transform: scale(1.1);
 }
 .cateringSec {
-  background: url("../assets/b1.png")!important;
+  background: url("../assets/b1.jpg")!important;
+  /* background: #90021c!important; */
   background-repeat: no-repeat;
   border-radius: 8px;
-  background-size: cover;
+  background-size: cover!important;
 }
 .backgroundColor {
   background: linear-gradient(
@@ -513,6 +514,7 @@ ul {
 .cateringTable{
 text-align: center!important;
 color: white!important;
+/* background:url("../assets/b1.png")!important; */
 }
 
 

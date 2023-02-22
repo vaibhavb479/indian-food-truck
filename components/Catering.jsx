@@ -146,7 +146,7 @@ export default function Services() {
 
       <section className="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
         <div className="container-fluid">
-          <div className="row mt-5  cateringSec">
+          <div className="row mt-5 cateringSec">
             <div
               className="col-md-12 pt-4"
               style={{ display: "flex", justifyContent: "center" }}

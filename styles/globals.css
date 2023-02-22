@@ -250,7 +250,7 @@ i {
   transform: scale(1.1);
 }
 .cateringSec {
-  background: url("../assets/b1.jpg")!important;
+  /* background: url("../assets/b1.jpg")!important; */
   /* background: #90021c!important; */
   background-repeat: no-repeat;
   border-radius: 8px;

@@ -20,6 +20,8 @@ import foodTruck14 from "../assets/foodTruck14.png";
 import foodTruck15 from "../assets/foodTruck15.png";
 import foodTruck16 from "../assets/foodTruck16.png";
 import foodTruck17 from "../assets/about-us1.png";
+import foodTruck18 from "../assets/illu1.png";
+import foodTruck19 from "../assets/illu2.png";
 import ReactPlayer from "react-player";
 export default function AboutUs() {
   const responsive = {
@@ -60,7 +62,7 @@ export default function AboutUs() {
           <div className="col-md-5 col-lg-3 col-xl-5 col-xs-1 col-sm-10">
             <div className={css.aboutImg}>
               <Image
-                src={foodTruck6}
+                src={foodTruck19}
                 alt=""
                 objectFit="cover"
                 layout="intrinsic"
@@ -68,19 +70,22 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-md-5 col-lg-7 col-xl-5 col-xs-7 col-sm-10 pl-5 m-auto">
+          <div className="col-md-5 col-lg-7 col-xl-6 col-xs-7 col-sm-10 pl-5 m-auto">
             <div className="row">
               <div className="col-md-12 aboutSec2">
-                <h5 className="text-center">ABOUT US</h5>
-                We are group of professional chefs decide to open a small
-                restaurant operation here in Sunnyvale, believed in ourselves to
-                maintain Quality and Affordability in concern we came out with
-                idea having food truck at the same time be different than any
-                other restaurants or food truck to combine menu from all over
-                India, should make it looks like this is everyone’s spot as we
-                all thrive for street foods and best Chai we also had the same
-                missing feel. “INDIAN STREET FOOD TRUCK” is one of the must try
-                spot where you all should stop by and give us your support.
+                <h3 className="text-center">ABOUT US</h3>
+                <p className="text-center">
+                  We are group of professional chefs decide to open a small
+                  restaurant operation here in Sunnyvale, believed in ourselves
+                  to maintain Quality and Affordability in concern we came out
+                  with idea having food truck at the same time be different than
+                  any other restaurants or food truck to combine menu from all
+                  over India, should make it looks like this is everyone’s spot
+                  as we all thrive for street foods and best Chai we also had
+                  the same missing feel. “INDIAN STREET FOOD TRUCK” is one of
+                  the must try spot where you all should stop by and give us
+                  your support.
+                </p>
               </div>
             </div>
           </div>
@@ -89,7 +94,7 @@ export default function AboutUs() {
       </section>
       <section className="mt-5 p-20 mb-5">
         <div className="col-md-12">
-          <h4 className="text-center">INDIAN FOOD TRUCKS</h4>
+          <h4 className="text-center">INDIAN FOOD TRUCK</h4>
         </div>
 
         <div className="row mt-5">
@@ -185,62 +190,6 @@ export default function AboutUs() {
               />
             </div>
           </Carousel>
-        </div>
-      </section>
-      <section
-        data-bs-version="5.1"
-        className="features5 cid-sK8XwkDPAS"
-        id="features5-7"
-      >
-        <div className="two_background"></div>
-
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-3 col-lg-4">
-            <div className="image_left">
-              <Image src={mango} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-          </div>
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="main_header">
-              <h2 className={css.mbr_section_title}>SPECIALS</h2>
-              <div className="menu_widget">
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Delicious Steak</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur){" "}
-                  </p>
-                </div>
-                {/* <div className="list_widget">
-                            <h3 className={css.mbr_section_subtitle}>La Pizza Pasta</h3>
-                            <p className={css.mbr_text}>(Lorem ipsum dolor sit amet, consectetur)</p>
-                        </div> */}
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Sweet Desert</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur)
-                  </p>
-                </div>
-                <div className="list_widget">
-                  <h3 className={css.mbr_section_subtitle}>Shot and Drink</h3>
-                  <p className={css.mbr_text}>
-                    (Lorem ipsum dolor sit amet, consectetur)
-                  </p>
-                </div>
-                <div className="list_widget">
-                  <p className={css.listBtn}>
-                    {/* <a href="index.html" className="text-primary"> */}
-                    <Link href="/menuList"> VIEW MENU</Link>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-3 col-lg-4">
-            <div className="image_right">
-              <Image src={chole} alt="" objectFit="cover" layout="intrinsic" />
-            </div>
-          </div>
         </div>
       </section>
     </div>

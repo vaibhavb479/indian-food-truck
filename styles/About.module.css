@@ -13,7 +13,6 @@
 .aboutSecHeading {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 }
@@ -128,7 +127,7 @@
 }
 
 .aboutImg span img {
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
 }
 .mbr_section_title {
   color: #3d1c22;
@@ -197,10 +196,11 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-.text h5 {
+.text h3 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: #f54748;
 }
 /* span{
   color: #4070f4;

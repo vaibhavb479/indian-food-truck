@@ -1,6 +1,17 @@
 import Image from "next/image";
 import css from "../styles/Catering.module.css";
 import chole from "../assets/New Folder/chole.jpg";
+import va from "../assets/New Folder/va.jpg";
+import vc from "../assets/New Folder/vc.jpg";
+import lcu from "../assets/New Folder/lcu.jpg";
+import cc from "../assets/New Folder/cap.jpg";
+import ca from "../assets/New Folder/ca.jpg";
+import pc from "../assets/New Folder/pc.jpg";
+import pa from "../assets/New Folder/pa.jpg";
+import mc from "../assets/New Folder/mc.jpg";
+import scu from "../assets/New Folder/scu.jpg";
+import rice from "../assets/New Folder/rice.jpg";
+
 import catering from "../assets/bflogo.png";
 import man from "../assets/serve.png";
 import Link from "next/link";
@@ -8,7 +19,15 @@ import imageBg from "../assets/b1.jpg";
 export default function Services() {
   const menuList = [
     {
-      img: chole,
+      img: va,
+      name: "Veg Appetizer",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: vc,
       name: "Veg Curry",
       smallTray: "$40",
       halfTray: "$60",
@@ -16,24 +35,64 @@ export default function Services() {
       fullTray: "$120",
     },
     {
-      img: chole,
-      name: "Veg Curry",
+      img: pa,
+      name: "Paneer Appetizer",
       smallTray: "$40",
       halfTray: "$60",
       mediumTary: "$100",
       fullTray: "$120",
     },
     {
-      img: chole,
-      name: "Veg Curry",
+      img: pc,
+      name: "Paneer Curry",
       smallTray: "$40",
       halfTray: "$60",
       mediumTary: "$100",
       fullTray: "$120",
     },
     {
-      img: chole,
-      name: "Veg Curry",
+      img: ca,
+      name: "Chicken Appetizer",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: cc,
+      name: "Chicken Curry",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: mc,
+      name: "Goat Curry",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: lcu,
+      name: "Lamb Curry",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: scu,
+      name: "Shrim or Fish Curry",
+      smallTray: "$40",
+      halfTray: "$60",
+      mediumTary: "$100",
+      fullTray: "$120",
+    },
+    {
+      img: rice,
+      name: "Variety Rice",
       smallTray: "$40",
       halfTray: "$60",
       mediumTary: "$100",

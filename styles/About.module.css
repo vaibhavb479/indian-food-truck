@@ -232,3 +232,24 @@
     padding-left: 5rem !important;
   }
 }
+.aboutSecBackground {
+  background-color: #fdecec;
+  border-radius: 1rem;
+  margin-top: 0.5rem !important;
+  margin: 0.2rem 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-bottom: 2rem;
+}
+.heading1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.heading1 > :nth-child(1) {
+  color: var(--themeRed);
+  font-size: 1rem;
+}

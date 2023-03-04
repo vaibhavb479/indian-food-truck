@@ -204,69 +204,66 @@ export default function Services() {
       </section>
 
       <section className="features3 cid-s5yYv1LlBg mt-5" id="features03-2">
-        <div className="card bg-dark text-white">
-          <Image src={imageBg} alt="" />
-          <div className="card-img-overlay">
-            <div className="container-fluid">
-              <div className="row cateringSec">
-                <div
-                  className="col-md-12 pt-4"
-                  style={{ display: "flex", justifyContent: "center" }}
-                >
-                  <Image
-                    src={catering}
-                    alt=""
-                    className="rounded-circle"
-                    width="80px"
-                    height="80px"
-                  />
-                </div>
-                <div
-                  className="col-md-8 card p-2 table-responsive mb-5"
-                  style={{
-                    boxShadow: "rgb(0 0 0 / 35%) 0px 5px 15px",
-                    margin: "auto",
-                  }}
-                >
-                  <table className="table cateringTable">
-                    <thead className="">
-                      <tr>
-                        <th>Image</th>
-                        <th>Menu</th>
-                        <th>Action</th>
+        <div className="card-body text-white">
+          <div className="container-fluid">
+            <div className="row cateringSec">
+              <div
+                className="col-md-12 pt-4"
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <Image
+                  src={catering}
+                  alt=""
+                  className="rounded-circle"
+                  width="80px"
+                  height="80px"
+                />
+              </div>
+              <div
+                className="col-md-8 card p-2 table-responsive mb-5"
+                style={{
+                  boxShadow: "rgb(0 0 0 / 35%) 0px 5px 15px",
+                  margin: "auto",
+                }}
+              >
+                <table className="table cateringTable">
+                  <thead className="">
+                    <tr>
+                      <th>Image</th>
+                      <th>Menu</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {menuList.map((item, index) => (
+                      <tr key={index} data-index={index}>
+                        <td>
+                          <div className="">
+                            <Image
+                              className=""
+                              src={item.img}
+                              alt=""
+                              width="50px"
+                              height="30px"
+                              style={{
+                                boxShadow: "#181818cf 0px 3px 2px -1px",
+                              }}
+                            />
+                          </div>
+                        </td>
+                        <td>{item.name}</td>
+                        <td>
+                          {" "}
+                          <Link href="/cateringList">
+                            <button type="button" className="button-table">
+                              View
+                            </button>
+                          </Link>
+                        </td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {menuList.map((item, index) => (
-                        <tr key={index} data-index={index}>
-                          <td>
-                            <div className="">
-                              <Image
-                                className=""
-                                src={item.img}
-                                alt=""
-                                width="50px"
-                                height="30px"
-                                style={{
-                                  boxShadow: "#181818cf 0px 3px 2px -1px",
-                                }}
-                              />
-                            </div>
-                          </td>
-                          <td>{item.name}</td>
-                          <td>
-                            {" "}
-                            <Link href="/cateringList">
-                              <button type="button" className="button-table">
-                                View
-                              </button>
-                            </Link>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

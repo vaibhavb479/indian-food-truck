@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 export default function Services() {
   const router = useRouter();
-const menuPlan = router.query;
-console.log('data77',menuPlan);
+  const menuPlan = router.query;
+  console.log("data77", menuPlan);
   return (
     <>
       <div className="row mt-5">
@@ -23,23 +23,19 @@ console.log('data77',menuPlan);
             <div className="pricing-body">
               <ul className="pricing-table-ul">
                 <li>
-                  <i className="">✔️</i>25 Small Tray
+                  <i className="">✔️</i>Enough for 10-15 people
                 </li>
                 <li>
-                  <i className="f">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i>25 Small Tray
-                </li>
-                <li>
-                  <i className="f">✔️</i> 25 Small Tray
+                  <i className="f">✔️</i>Cooked fresh with Hygine
                 </li>
               </ul>
-              <a href="#" className="view-more">
-                Buy Plan
+              <a
+                href="tel:+16693008201"
+                target="_blank"
+                rel="noreferrer"
+                className="view-more"
+              >
+                Book Order
               </a>
             </div>
           </div>
@@ -51,28 +47,24 @@ console.log('data77',menuPlan);
               {/* <p>Loerm Ipsum Donor Sit Amet</p> */}
             </div>
             <div className="price">
-              <strong>{menuPlan.priceHalf}</strong> 
+              <strong>{menuPlan.priceHalf}</strong>
             </div>
             <div className="pricing-body">
               <ul className="pricing-table-ul">
                 <li>
-                  <i className="">✔️</i>25 Small Tray
+                  <i className="">✔️</i>Enough for 15-20 people
                 </li>
                 <li>
-                  <i className="f">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i>25 Small Tray
-                </li>
-                <li>
-                  <i className="f">✔️</i> 25 Small Tray
+                  <i className="f">✔️</i> Cooked fresh with Hygine
                 </li>
               </ul>
-              <a href="#" className="view-more">
-                Buy Plan
+              <a
+                href="tel:+16693008201"
+                target="_blank"
+                rel="noreferrer"
+                className="view-more"
+              >
+                Book Order
               </a>
             </div>
           </div>
@@ -89,23 +81,19 @@ console.log('data77',menuPlan);
             <div className="pricing-body">
               <ul className="pricing-table-ul">
                 <li>
-                  <i className="">✔️</i>25 Small Tray
+                  <i className="">✔️</i>Enough for 20-30 people
                 </li>
                 <li>
-                  <i className="f">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i>25 Small Tray
-                </li>
-                <li>
-                  <i className="f">✔️</i> 25 Small Tray
+                  <i className="f">✔️</i> Cooked fresh with Hygine
                 </li>
               </ul>
-              <a href="#" className="view-more">
-                Buy Plan
+              <a
+                href="tel:+16693008201"
+                target="_blank"
+                rel="noreferrer"
+                className="view-more"
+              >
+                Book Order
               </a>
             </div>
           </div>
@@ -122,23 +110,19 @@ console.log('data77',menuPlan);
             <div className="pricing-body">
               <ul className="pricing-table-ul">
                 <li>
-                  <i className="">✔️</i>25 Small Tray
+                  <i className="">✔️</i>Enough for 50-60 people
                 </li>
                 <li>
-                  <i className="f">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i> 25 Small Tray
-                </li>
-                <li>
-                  <i className="">✔️</i>25 Small Tray
-                </li>
-                <li>
-                  <i className="f">✔️</i> 25 Small Tray
+                  <i className="f">✔️</i> Cooked fresh with Hygine
                 </li>
               </ul>
-              <a href="#" className="view-more">
-                Buy Plan
+              <a
+                href="tel:+16693008201"
+                target="_blank"
+                rel="noreferrer"
+                className="view-more"
+              >
+                Book Order
               </a>
             </div>
           </div>

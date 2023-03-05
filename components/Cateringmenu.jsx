@@ -1,10 +1,14 @@
+import { useRouter } from 'next/router'
 export default function Services() {
+  const router = useRouter();
+const menuPlan = router.query;
+console.log('data77',menuPlan);
   return (
     <>
       <div className="row mt-5">
         <div className="planHeading mt-5">
           <strong>
-            <h3>Plan</h3>
+            <h3>{menuPlan.name} Plan</h3>
           </strong>
         </div>
         <div className="col-md-6 col-lg-3 col-xl-3 col-sm-12 col-xm-12 mt-3">
@@ -14,7 +18,7 @@ export default function Services() {
               {/* <p>Loerm Ipsum Donor Sit Amet</p> */}
             </div>
             <div className="price">
-              <strong>$3</strong> / MONTH
+              <strong>{menuPlan.priceSmall}</strong>
             </div>
             <div className="pricing-body">
               <ul className="pricing-table-ul">
@@ -47,7 +51,7 @@ export default function Services() {
               {/* <p>Loerm Ipsum Donor Sit Amet</p> */}
             </div>
             <div className="price">
-              <strong>$8</strong> / MONTH
+              <strong>{menuPlan.priceHalf}</strong> 
             </div>
             <div className="pricing-body">
               <ul className="pricing-table-ul">
@@ -80,7 +84,7 @@ export default function Services() {
               {/* <p>Loerm Ipsum Donor Sit Amet</p> */}
             </div>
             <div className="price">
-              <strong>$12</strong> / MONTH
+              <strong>{menuPlan.priceMedium}</strong>
             </div>
             <div className="pricing-body">
               <ul className="pricing-table-ul">
@@ -113,7 +117,7 @@ export default function Services() {
               {/* <p>Loerm Ipsum Donor Sit Amet</p> */}
             </div>
             <div className="price">
-              <strong>$3</strong> / MONTH
+              <strong>{menuPlan.priceFull}</strong>
             </div>
             <div className="pricing-body">
               <ul className="pricing-table-ul">

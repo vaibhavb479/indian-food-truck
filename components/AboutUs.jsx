@@ -53,10 +53,13 @@ export default function AboutUs() {
 
       <Services />
 
-      <section className="mt-5 p-20">
-        {/* <div className="col-md-12">
-          <h5 className="text-center">ABOUT US</h5>
-        </div> */}
+      <div className={css.aboutSecBackground}>
+      <div className="row">
+        <div className={css.heading1}>
+                {/* <div className="col-md-12"> */}
+          <span>About Us</span>
+        </div>
+        </div>
         <div className="row col-md-12 mt-4">
           <div className="col-md-1"></div>
           <div className="col-md-5 col-lg-3 col-xl-5 col-xs-1 col-sm-10">
@@ -73,7 +76,7 @@ export default function AboutUs() {
           <div className="col-md-5 col-lg-7 col-xl-6 col-xs-7 col-sm-10 pl-5 m-auto">
             <div className="row">
               <div className="col-md-12 aboutSec2">
-                <h3 className="text-center">ABOUT US</h3>
+                {/* <h3 className="text-center">ABOUT US</h3> */}
                 <p className="text-center">
                   We are group of professional chefs decide to open a small
                   restaurant operation here in Sunnyvale, believed in ourselves
@@ -91,10 +94,13 @@ export default function AboutUs() {
           </div>
           <div className="col-md-1"></div>
         </div>
-      </section>
-      <section className="mt-5 p-20 mb-5">
-        <div className="col-md-12">
-          <h4 className="text-center">INDIAN FOOD TRUCK</h4>
+      </div>
+      <section className="mt-3 p-20 mb-5">
+      <div className="row">
+        <div className={css.heading1}>
+                {/* <div className="col-md-12"> */}
+                <span>Indian Food Truck</span>
+        </div>
         </div>
 
         <div className="row mt-5">

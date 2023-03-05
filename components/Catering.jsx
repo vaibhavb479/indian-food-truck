@@ -253,7 +253,11 @@ export default function Services() {
                         <td>{item.name}</td>
                         <td>
                           {" "}
-                          <Link href="/cateringList">
+                          <Link
+                            href={{
+                              pathname: "/cateringList",
+                              query: item,
+                            }} as={`/cateringList`} passHref>
                             <button type="button" className="button-table">
                               View
                             </button>

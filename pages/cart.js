@@ -28,7 +28,7 @@ export default function Cart() {
     setPaymentMethod(0);
     typeof window !== "undefined" && localStorage.setItem("total", total());
   };
-
+  console.log(CartData.foods, "list");
   const handleCheckout = async () => {
     typeof window !== "undefined" && localStorage.setItem("total", total());
     setPaymentMethod(1);
@@ -79,13 +79,7 @@ export default function Cart() {
                         />
                       </td>
                       <td>{food.name}</td>
-                      <td>
-                        {food.category === 0
-                          ? "Veg"
-                          : food.category === 1
-                          ? "Egg"
-                          : "Chicken"}
-                      </td>
+                      <td>{food?.menuType[food.category]}</td>
                       <td>{food.price}</td>
                       <td>{food.quantity}</td>
                       <td>{food.price * food.quantity}</td>

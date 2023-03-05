@@ -62,8 +62,9 @@ export default function Food({ food }) {
           </span>
           <div className={css.varients}>
             <span>Category</span>
-            <div className={css.sizeVarients}>
+            <div className={food?.menuType.length <= '3' ? css.sizeVarients: css.sizeVarients1}>
               {food?.menuType.map((item, index) => (
+              
                 <div
                   key={item}
                   onClick={() => setCategory(index)}
@@ -71,9 +72,11 @@ export default function Food({ food }) {
                 >
                   {item}
                 </div>
+               
               ))}
-            </div>
+        </div>
           </div>
+         
 
           {/* Quantity Counter */}
           <div className={css.quantity}>

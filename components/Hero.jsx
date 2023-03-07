@@ -1,7 +1,9 @@
 import Image from "next/image";
 import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
-import HeroImage from "../assets/3dBanner.png";
+// import HeroImage from "../assets/3dBanner.png";
+import HeroImage from "../assets/heroSecImg.jpg";
+import HeroImageMob from "../assets/heroSecImgMob.jpg";
 import { UilPhone } from "@iconscout/react-unicons";
 import Tea1 from "../assets/chai.png";
 import Link from "next/link";
@@ -36,9 +38,12 @@ export default function Hero() {
           style={{ position: "relative" }}
         >
           <div className={css.imageContainer}>
-            <Image src={HeroImage} alt="" layout="intrinsic" />
+          <Image src={HeroImage}   alt="" layout="intrinsic" />
           </div>
-
+          <div className={css.imageContainerMob}>
+         
+          <Image src={HeroImageMob}   alt="" layout="intrinsic" />
+          </div>
           <div className={css.Tea}>
             <div>
               <Image src={Tea1} alt="" objectFit="cover" layout="intrinsic" />

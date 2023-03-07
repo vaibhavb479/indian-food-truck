@@ -69,7 +69,7 @@
     margin-bottom: 2rem;
   }
   .imageContainer {
-    display: flex;
+    display: none;
     width: 23rem;
     left: -5rem !important;
     margin-top: -4rem;
@@ -85,12 +85,19 @@
   .miniPara {
     display: none;
   }
+  .imageContainerMob {
+    display:block
+  }
 }
-@media screen and (min-width: 830px) {
-  .imageContainer {
+@media screen and (min-width: 766px) {
+  .imageContainerMob {
     width: 34rem;
     position: absolute;
     margin: -6rem;
+    display:none
+  }
+  .imageContainer {
+    display:block
   }
 }
 
@@ -167,3 +174,20 @@
     font-size: large;
   }
 }
+@media screen and (max-width: 765px) {
+.fullScreenmob{
+  display: none;
+}
+.fullScreen{
+  display: block;
+}
+}
+@media screen and (min-width: 766px) {
+  .fullScreen{
+    display: none;
+  }
+  .fullScreenmob{
+    display: block;
+  }
+  }
+  

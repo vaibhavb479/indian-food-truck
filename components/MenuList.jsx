@@ -29,7 +29,6 @@ export default function MenuList({ foods }) {
                   />
                 </div>
               </Link>
-
               <span>{food.name}</span>
               <span>
                 <span style={{ color: "var(--themeRed)" }}>$</span>{" "}

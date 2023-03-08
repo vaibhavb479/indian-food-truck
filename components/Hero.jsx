@@ -33,10 +33,10 @@ export default function Hero() {
 
         <div
           className="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-          <div className={css.imageContainer}>
+          <div className={css.imageContainer} style={{borderRadius: '2rem', overflow: 'hidden'}}>
           <Image src={HeroImage}   alt="" layout="intrinsic" />
           </div>
-          <div className={css.imageContainerMob}>
+          <div className={css.imageContainerMob} style={{borderRadius: '2rem', overflow: 'hidden'}}>
           <Image src={HeroImageMob}   alt="" layout="intrinsic" />
           </div>
           {/* <div className={css.Tea}>

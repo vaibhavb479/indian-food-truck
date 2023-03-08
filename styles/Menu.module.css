@@ -60,3 +60,9 @@
 .food:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 765px) {
+  .heading > :nth-child(1) {
+    font-size: 1.4rem;
+  }
+}

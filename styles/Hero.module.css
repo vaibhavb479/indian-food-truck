@@ -149,14 +149,8 @@
     margin-top: 8rem;
   }
   .imageContainer {
-    display: flex;
-    left: -3rem !important;
-    margin-top: -3rem;
-    margin-bottom: -3rem;
-    position: relative;
-    width: 24rem !important;
-    position: absolute !important;
-    right: -3rem !important;
+   display: flex;
+   position: relative;
   }
   .cherryDiv {
     margin-top: -6rem;

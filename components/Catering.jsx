@@ -61,7 +61,7 @@ export default function Services() {
       img: cc,
       name: "Chicken Curry",
       priceSmall: "$40",
-      priceHalf: "$6500",
+      priceHalf: "$50",
       priceMedium: "$100",
       priceFull: "$120",
     },

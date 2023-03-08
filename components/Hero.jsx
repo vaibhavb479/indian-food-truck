@@ -10,9 +10,9 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className={css.container}>
-      <div className="row col-md-12">
+      <div className="row">
         {/* left side */}
-        <div className="col-md-6 col-sm-12 col-xs-12 col-lg-6 mb-4 mt-5">
+        {/* <div className="col-md-6 col-sm-12 col-xs-12 col-lg-6 mb-4 mt-5">
           <div className={css.cherryDiv}>
             <span>More than Faster</span>
             <Image src={Cherry} alt="" width={40} height={25} />
@@ -26,25 +26,20 @@ export default function Hero() {
           <span className={css.miniPara}>
             All Street Food Lovers Are Heartedly Invited 🥘
           </span>
-          {/* <button className={`btn ${css.btn}`}>
-          <Link href="../">Get Started</Link>
-        </button> */}
-        </div>
+          
+        </div> */}
 
         {/* right side */}
 
         <div
-          className="col-md-6 col-sm-12 col-xs-12 col-lg-6"
-          style={{ position: "relative" }}
-        >
+          className="col-md-12 col-sm-12 col-xs-12 col-lg-12">
           <div className={css.imageContainer}>
           <Image src={HeroImage}   alt="" layout="intrinsic" />
           </div>
           <div className={css.imageContainerMob}>
-         
           <Image src={HeroImageMob}   alt="" layout="intrinsic" />
           </div>
-          <div className={css.Tea}>
+          {/* <div className={css.Tea}>
             <div>
               <Image src={Tea1} alt="" objectFit="cover" layout="intrinsic" />
             </div>
@@ -54,7 +49,7 @@ export default function Hero() {
                 <span style={{ color: "var(--themeRed)" }}>$</span> 3
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

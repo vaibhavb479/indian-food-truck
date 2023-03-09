@@ -62,22 +62,11 @@ export default function AboutUs() {
         </div>
         <div className="row col-md-12 mt-4">
           <div className="col-md-1"></div>
-          <div className="col-md-5 col-lg-3 col-xl-5 col-xs-1 col-sm-10">
-            <div className={css.aboutImg}>
-              <Image
-                src={foodTruck19}
-                alt=""
-                objectFit="cover"
-                layout="intrinsic"
-              />
-            </div>
-          </div>
-
           <div className="col-md-5 col-lg-7 col-xl-6 col-xs-7 col-sm-10 pl-5 m-auto">
             <div className="row">
               <div className="col-md-12 aboutSec2">
                 {/* <h3 className="text-center">ABOUT US</h3> */}
-                <p className="text-center">
+                <p className="">
                   We are group of professional chefs decide to open a small
                   restaurant operation here in Sunnyvale, believed in ourselves
                   to maintain Quality and Affordability in concern we came out
@@ -90,6 +79,16 @@ export default function AboutUs() {
                   your support.
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="col-md-5 col-lg-3 col-xl-5 col-xs-1 col-sm-10">
+            <div className={css.aboutImg}>
+              <Image
+                src={foodTruck19}
+                alt=""
+                objectFit="cover"
+                layout="intrinsic"
+              />
             </div>
           </div>
           <div className="col-md-1"></div>

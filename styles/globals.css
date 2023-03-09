@@ -176,7 +176,7 @@ i {
 }
 @media (min-width: 992px) {
   .aboutSec2 {
-    padding-left: 5rem !important;
+    /* padding-left: 5rem !important; */
   }
 }
 @media (min-width: 766px) {

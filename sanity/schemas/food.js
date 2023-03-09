@@ -48,5 +48,11 @@ export default {
       title: "Favourite Menu",
       type: "string",
     },
+    {
+      name: "foodCategory",
+      title: "Food Category",
+      type: "array",
+      of: [{ type: "string" }],
+    },
   ],
 };

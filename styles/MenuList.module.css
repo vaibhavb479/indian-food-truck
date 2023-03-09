@@ -9,6 +9,15 @@
     text-align: center !important;
   }
 }
+.subheading{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: flex-start;
+  color: var(--themeRed);
+  font-size: 1.5rem;
+  /* margin-top: 40px; */
+}
 .heading {
   display: flex;
   flex-direction: column;

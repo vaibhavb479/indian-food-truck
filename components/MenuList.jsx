@@ -39,7 +39,7 @@ export default function MenuList({ foods }) {
         <span>Our Menu 🍒</span>
       </div>
       {menuAllTime ? <div className={css.subheading}>
-         <span>All Time</span>
+         <span>All Time Favourites</span>
       </div> : ""}
       <div className={css.menu}>
         {/*foods*/}
@@ -112,7 +112,7 @@ export default function MenuList({ foods }) {
       
       {menuSouth ? <div className={css.subheading}>
         <span></span>
-        <span>South Indian</span> 
+        <span>South Special</span> 
       </div>: ""}
       <div className={css.menu}>
         {/*foods*/}
@@ -183,7 +183,7 @@ export default function MenuList({ foods }) {
       
       {menuIndo ? <div className={css.subheading}>
         <span></span>
-        <span>Indo-asian</span>
+        <span>Indo-Asian</span>
       </div> : ""}
 
       <div className={css.menu}>

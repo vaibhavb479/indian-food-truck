@@ -62,7 +62,7 @@ export default function Footer() {
               </a>
               <a
                 className={css.footer__btn}
-                href="tel:+16693008201"
+                href="tel:+16692907925"
                 target="_blank"
                 rel="noreferrer"
               >

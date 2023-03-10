@@ -10,6 +10,7 @@ export default function MenuList({ foods }) {
   const [menuChaats, setmenuChaats] = useState("");
   const [menubriyani, setmenubriyani] = useState("");
   const [menuIndo, setmenuIndo] = useState("");
+  const [menuDrinks, setmenuDrinks] = useState("");
 
   useEffect(() => {
     for (let i = 0; i < foods.length; i++) {
@@ -30,6 +31,9 @@ export default function MenuList({ foods }) {
       }
       if (foods[i].foodCategory == "indo") {
         setmenuIndo(true);
+      }
+      if (foods[i].foodCategory == "drinks") {
+        setmenuDrinks(true);
       }
     }
   }, []);
@@ -246,6 +250,45 @@ export default function MenuList({ foods }) {
         {/*foods*/}
         {foods.map((food, id) => {
           if (food.foodCategory == "wraps") {
+            const src = urlFor(food.image).url();
+            return (
+              <div className={css.food} key={id}>
+                <Link href={`./food/${food.slug.current}`}>
+                  <div className={css.ImageWrapper}>
+                    <Image
+                      loader={() => src}
+                      src={src}
+                      alt=""
+                      objectFit="cover"
+                      layout="fill"
+                    />
+                  </div>
+                </Link>
+                <span>{food.name}</span>
+                <span>
+                  <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
+                  {food.price[0]}
+                </span>
+              </div>
+            );
+          }
+        })}
+      </div>
+      {menuWraps ? <hr /> : ""}
+
+      {menuDrinks ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Drinks</span>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <div className={css.menu}>
+        {/*foods*/}
+        {foods.map((food, id) => {
+          if (food.foodCategory == "drinks") {
             const src = urlFor(food.image).url();
             return (
               <div className={css.food} key={id}>

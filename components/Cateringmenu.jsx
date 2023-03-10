@@ -30,7 +30,7 @@ export default function Services() {
                 </li>
               </ul>
               <a
-                href="tel:+16693008201"
+                href="tel:+16692907925"
                 target="_blank"
                 rel="noreferrer"
                 className="view-more"
@@ -59,7 +59,7 @@ export default function Services() {
                 </li>
               </ul>
               <a
-                href="tel:+16693008201"
+                href="tel:+16692907925"
                 target="_blank"
                 rel="noreferrer"
                 className="view-more"
@@ -88,7 +88,7 @@ export default function Services() {
                 </li>
               </ul>
               <a
-                href="tel:+16693008201"
+                href="tel:+16692907925"
                 target="_blank"
                 rel="noreferrer"
                 className="view-more"
@@ -117,7 +117,7 @@ export default function Services() {
                 </li>
               </ul>
               <a
-                href="tel:+16693008201"
+                href="tel:+16692907925"
                 target="_blank"
                 rel="noreferrer"
                 className="view-more"

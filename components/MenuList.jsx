@@ -5,19 +5,20 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 export default function MenuList({ foods }) {
   const [menuAllTime, setmenuAllTime] = useState("");
-  const [menuWrap, setmenuWrap] = useState("");
+  const [menuWraps, setmenuWraps] = useState("");
   const [menuSouth, setmenuSouth] = useState("");
   const [menuChaats, setmenuChaats] = useState("");
-  const [menubiryani, setmenubiryani] = useState("");
+  const [menubriyani, setmenubriyani] = useState("");
   const [menuIndo, setmenuIndo] = useState("");
+  const [menuDrinks, setmenuDrinks] = useState("");
 
   useEffect(() => {
     for (let i = 0; i < foods.length; i++) {
       if (foods[i].foodCategory == "all-time") {
         setmenuAllTime(true);
       }
-      if (foods[i].foodCategory == "wrap") {
-        setmenuWrap(true);
+      if (foods[i].foodCategory == "wraps") {
+        setmenuWraps(true);
       }
       if (foods[i].foodCategory == "south") {
         setmenuSouth(true);
@@ -25,11 +26,14 @@ export default function MenuList({ foods }) {
       if (foods[i].foodCategory == "chaats") {
         setmenuChaats(true);
       }
-      if (foods[i].foodCategory == "biryani") {
-        setmenubiryani(true);
+      if (foods[i].foodCategory == "briyani") {
+        setmenubriyani(true);
       }
       if (foods[i].foodCategory == "indo") {
         setmenuIndo(true);
+      }
+      if (foods[i].foodCategory == "drinks") {
+        setmenuDrinks(true);
       }
     }
   }, []);
@@ -38,9 +42,13 @@ export default function MenuList({ foods }) {
       <div className={css.heading}>
         <span>Our Menu 🍒</span>
       </div>
-      {menuAllTime ? <div className={css.subheading}>
-         <span>All Time</span>
-      </div> : ""}
+      {menuAllTime ? (
+        <div className={css.subheading}>
+          <span>All Time Favourites</span>
+        </div>
+      ) : (
+        ""
+      )}
       <div className={css.menu}>
         {/*foods*/}
         {foods.map((food, id) => {
@@ -69,15 +77,17 @@ export default function MenuList({ foods }) {
           }
         })}
       </div>
-      {menuAllTime ?  <hr /> : ""}
-
-     
+      {menuAllTime ? <hr /> : ""}
 
       {/* chaat food */}
-      {menuChaats ?<div className={css.subheading}>
-        <span></span>
-        <span>Chaats</span>
-      </div> : ""}
+      {menuChaats ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Chaats</span>
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className={css.menu}>
         {/*foods*/}
@@ -107,13 +117,16 @@ export default function MenuList({ foods }) {
           }
         })}
       </div>
-      {menuChaats ? <hr />: ""}
+      {menuChaats ? <hr /> : ""}
 
-      
-      {menuSouth ? <div className={css.subheading}>
-        <span></span>
-        <span>South Indian</span> 
-      </div>: ""}
+      {menuSouth ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>South Special</span>
+        </div>
+      ) : (
+        ""
+      )}
       <div className={css.menu}>
         {/*foods*/}
         {foods.map((food, id) => {
@@ -144,17 +157,20 @@ export default function MenuList({ foods }) {
       </div>
       {menuSouth ? <hr /> : ""}
 
-      
-      {/* biryani */}
-      {menubiryani ? <div className={css.subheading}>
-        <span></span>
-      <span>Biryani</span>
-      </div> :''}
+      {/* briyani */}
+      {menubriyani ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Briyani</span>
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className={css.menu}>
         {/*foods*/}
         {foods.map((food, id) => {
-          if (food.foodCategory == "biryani") {
+          if (food.foodCategory == "briyani") {
             const src = urlFor(food.image).url();
             return (
               <div className={css.food} key={id}>
@@ -179,12 +195,16 @@ export default function MenuList({ foods }) {
           }
         })}
       </div>
-      {menubiryani ? <hr /> : ""}
-      
-      {menuIndo ? <div className={css.subheading}>
-        <span></span>
-        <span>Indo-asian</span>
-      </div> : ""}
+      {menubriyani ? <hr /> : ""}
+
+      {menuIndo ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Indo-Asian</span>
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className={css.menu}>
         {/*foods*/}
@@ -214,18 +234,61 @@ export default function MenuList({ foods }) {
           }
         })}
       </div>
-    
-      {menuIndo ?   <hr /> : ""}
 
-      {menuWrap ? <div className={css.subheading}>
-        <span></span>
-      <span>Wraps</span> 
-      </div>: ""}
+      {menuIndo ? <hr /> : ""}
+
+      {menuWraps ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Wraps</span>
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className={css.menu}>
         {/*foods*/}
         {foods.map((food, id) => {
-          if (food.foodCategory == "wrap") {
+          if (food.foodCategory == "wraps") {
+            const src = urlFor(food.image).url();
+            return (
+              <div className={css.food} key={id}>
+                <Link href={`./food/${food.slug.current}`}>
+                  <div className={css.ImageWrapper}>
+                    <Image
+                      loader={() => src}
+                      src={src}
+                      alt=""
+                      objectFit="cover"
+                      layout="fill"
+                    />
+                  </div>
+                </Link>
+                <span>{food.name}</span>
+                <span>
+                  <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
+                  {food.price[0]}
+                </span>
+              </div>
+            );
+          }
+        })}
+      </div>
+      {menuWraps ? <hr /> : ""}
+
+      {menuDrinks ? (
+        <div className={css.subheading}>
+          <span></span>
+          <span>Drinks</span>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <div className={css.menu}>
+        {/*foods*/}
+        {foods.map((food, id) => {
+          if (food.foodCategory == "drinks") {
             const src = urlFor(food.image).url();
             return (
               <div className={css.food} key={id}>

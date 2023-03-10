@@ -29,10 +29,10 @@ export default function Menu({ foods }) {
               </Link>
 
               <span>{food.name}</span>
-              <span>
+              {/* <span>
                 <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
                 {food.price[0]}
-              </span>
+              </span> */}
             </div>
           );
         }

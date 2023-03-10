@@ -10,10 +10,8 @@ import pa from "../assets/New Folder/pa.jpg";
 import mc from "../assets/New Folder/mc.jpg";
 import scu from "../assets/New Folder/scu.jpg";
 import rice from "../assets/New Folder/rice.jpg";
-
 import catering from "../assets/bflogo.png";
 import cateringImg from "../assets/cateringImg.jpg";
-
 import man from "../assets/serve.png";
 import Link from "next/link";
 import imageBg from "../assets/b1.jpg";

@@ -10,8 +10,8 @@ import pa from "../assets/New Folder/pa.jpg";
 import mc from "../assets/New Folder/mc.jpg";
 import scu from "../assets/New Folder/scu.jpg";
 import rice from "../assets/New Folder/rice.jpg";
-
 import catering from "../assets/bflogo.png";
+import cateringImg from "../assets/cateringImg.jpg";
 import man from "../assets/serve.png";
 import Link from "next/link";
 import imageBg from "../assets/b1.jpg";
@@ -101,6 +101,11 @@ export default function Services() {
   return (
     <>
       <div className={css.cateringHeading}></div>
+      <section className="features3 cid-s5yYv1LlBg mt-3" id="features03-2">
+        <div className="container-fluid">
+          <Image src={cateringImg} alt="" layout="intrinsic" />
+        </div>
+      </section>
 
       <section className="features3 cid-s5yYv1LlBg mt-3" id="features03-2">
         <div className="container-fluid">

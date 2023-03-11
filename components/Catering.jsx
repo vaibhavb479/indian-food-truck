@@ -193,9 +193,9 @@ export default function Services() {
                       <div className="card-box">
                         <p className="card-text mbr-fonts-style display-7">
                           {" "}
-                          Contact us All your Festivals, House, Warming,
+                          Contact us All your Festivals, House, Warming
                           Weddings, Baby Showers, Birthday Party, Anniversaries,
-                          Office, Gatherings, Graduations.
+                          Office Gatherings, Graduations.
                         </p>
                       </div>
                     </div>

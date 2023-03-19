@@ -5,8 +5,10 @@ import css from "../styles/OrderModal.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
 import { useRouter } from "next/router";
-
+import React, { Component } from 'react';
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
+  var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
+
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
@@ -21,6 +23,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     e.preventDefault();
     const id = await createOrder({ ...FormData, total, PaymentMethod });
     toast.success("Order Placed");
+  audio.play();
     resetCart();
     {
       typeof window !== "undefined" && localStorage.setItem("order", id);
@@ -65,7 +68,6 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
         <span>
           You will pay<span> $ {total}</span> on Delivery
         </span>
-
         <button type="submit" className="btn">
           Place Order
         </button>

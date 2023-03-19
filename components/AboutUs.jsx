@@ -40,7 +40,7 @@ export default function AboutUs() {
       items: 1,
     },
   };
-  debugger
+
   return (
     <div className={css.container}>
       <section className={css.imgSection}>
@@ -52,10 +52,10 @@ export default function AboutUs() {
       <Services />
 
       <div className={css.aboutSecBackground}>
-      <div className="row">
-        <div className={css.heading1}>
-          <span>About Us</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            <span>About Us</span>
+          </div>
         </div>
         <div className="row col-md-12 mt-4">
           <div className="col-md-1"></div>
@@ -92,11 +92,11 @@ export default function AboutUs() {
         </div>
       </div>
       <section className="mt-3 p-20 mb-5">
-      <div className="row">
-        <div className={css.heading1}>
-                {/* <div className="col-md-12"> */}
-                <span>Indian Food Truck</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            {/* <div className="col-md-12"> */}
+            <span>Indian Food Truck</span>
+          </div>
         </div>
 
         <div className="row mt-5">

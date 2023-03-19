@@ -124,7 +124,7 @@ export default function Cart() {
                 Pay Now
               </button>
             </div>
-           ) : null}
+           ) : null} 
         </div>
       </div>
       <Toaster />

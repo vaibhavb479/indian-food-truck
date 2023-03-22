@@ -5,10 +5,11 @@ import css from "../styles/OrderModal.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
 import { useRouter } from "next/router";
-import React, { Component } from 'react';
-export default function OrderModal({ opened, setOpened, PaymentMethod }) {
-  var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
+import React, { Component ,useEffect} from 'react';
 
+export default function OrderModal({ opened, setOpened, PaymentMethod }) {
+  // var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
+  const [audio, setAudio] = useState(null)
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
@@ -18,12 +19,17 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   };
   const resetCart = useStore((state) => state.resetCart);
   const total = typeof window !== "undefined" && localStorage.getItem("total");
+  useEffect(() => {
+
+    setAudio(new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"))  // only call client
+
+},[])
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const id = await createOrder({ ...FormData, total, PaymentMethod });
     toast.success("Order Placed");
-  audio.play();
+     audio.play();
     resetCart();
     {
       typeof window !== "undefined" && localStorage.setItem("order", id);

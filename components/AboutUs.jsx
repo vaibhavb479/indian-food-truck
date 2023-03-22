@@ -4,8 +4,6 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import Services from "./Services";
 import "react-multi-carousel/lib/styles.css";
-// import Video from "../assets/video.mp4";
-import mango from "../assets/New Folder/mango.jpg";
 import chole from "../assets/New Folder/chole.jpg";
 import foodTruck2 from "../assets/foodTruck2.png";
 import foodTruck4 from "../assets/foodTruck4.png";
@@ -20,9 +18,8 @@ import foodTruck14 from "../assets/foodTruck14.png";
 import foodTruck15 from "../assets/foodTruck15.png";
 import foodTruck16 from "../assets/foodTruck16.png";
 import foodTruck17 from "../assets/about-us1.png";
-import foodTruck18 from "../assets/illu1.png";
 import foodTruck19 from "../assets/illu2.png";
-import ReactPlayer from "react-player";
+
 export default function AboutUs() {
   const responsive = {
     superLargeDesktop: {
@@ -43,6 +40,7 @@ export default function AboutUs() {
       items: 1,
     },
   };
+
   return (
     <div className={css.container}>
       <section className={css.imgSection}>
@@ -54,11 +52,10 @@ export default function AboutUs() {
       <Services />
 
       <div className={css.aboutSecBackground}>
-      <div className="row">
-        <div className={css.heading1}>
-                {/* <div className="col-md-12"> */}
-          <span>About Us</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            <span>About Us</span>
+          </div>
         </div>
         <div className="row col-md-12 mt-4">
           <div className="col-md-1"></div>
@@ -95,11 +92,11 @@ export default function AboutUs() {
         </div>
       </div>
       <section className="mt-3 p-20 mb-5">
-      <div className="row">
-        <div className={css.heading1}>
-                {/* <div className="col-md-12"> */}
-                <span>Indian Food Truck</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            {/* <div className="col-md-12"> */}
+            <span>Indian Food Truck</span>
+          </div>
         </div>
 
         <div className="row mt-5">

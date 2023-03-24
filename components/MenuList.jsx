@@ -40,7 +40,11 @@ export default function MenuList({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>Our Menu 🍒</span>
+        <span>
+          <marquee behavior="scroll" direction="right" scrollamount="12">
+           🤩 Our Menu 🤩
+          </marquee>
+        </span>
       </div>
       {menuAllTime ? (
         <div className={css.subheading}>

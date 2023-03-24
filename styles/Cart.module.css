@@ -20,15 +20,19 @@
   border-collapse: collapse;
   border-spacing: 1rem;
   margin-top: 4.5rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .tbody > tr > td {
   text-align: left;
+  justify-content: center;
+  text-align: center;
 }
 
-.tbody > tr > :nth-child(2) {
-  width: 15%;
-}
+/* .tbody > tr > :nth-child(2) {
+      width: 15%;
+    } */
 
 .imageTd > span > img {
   border-radius: 1rem;

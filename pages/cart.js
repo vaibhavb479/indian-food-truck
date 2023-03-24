@@ -113,7 +113,6 @@ export default function Cart() {
           </div>
 
           {!Order && CartData.foods.length > 0 ? (
-         
             <div className={css.buttons}>
               {/* <button className="btn" onClick={handleOnDelivery}>
                 {" "}
@@ -124,7 +123,7 @@ export default function Cart() {
                 Pay Now
               </button>
             </div>
-           ) : null} 
+          ) : null}
         </div>
       </div>
       <Toaster />

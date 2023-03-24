@@ -3,7 +3,7 @@ import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
 // import HeroImage from "../assets/3dBanner.png";
 import HeroImage from "../assets/heroSecImg.jpg";
-import HeroImageMob from "../assets/heroSecImgMob.jpg";
+import HeroImageMob from "../assets/homebanner.jpg";
 import { UilPhone } from "@iconscout/react-unicons";
 import Tea1 from "../assets/chai.png";
 import Link from "next/link";

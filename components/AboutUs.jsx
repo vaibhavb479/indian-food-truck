@@ -18,7 +18,7 @@ import foodTruck14 from "../assets/foodTruck14.png";
 import foodTruck15 from "../assets/foodTruck15.png";
 import foodTruck16 from "../assets/foodTruck16.png";
 import foodTruck17 from "../assets/about-us1.png";
-import foodTruck19 from "../assets/illu2.png";
+import foodTruck19 from "../assets/wppic.jpg";
 
 export default function AboutUs() {
   const responsive = {
@@ -40,7 +40,7 @@ export default function AboutUs() {
       items: 1,
     },
   };
-  debugger
+
   return (
     <div className={css.container}>
       <section className={css.imgSection}>
@@ -52,10 +52,10 @@ export default function AboutUs() {
       <Services />
 
       <div className={css.aboutSecBackground}>
-      <div className="row">
-        <div className={css.heading1}>
-          <span>About Us</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            <span>About Us</span>
+          </div>
         </div>
         <div className="row col-md-12 mt-4">
           <div className="col-md-1"></div>
@@ -63,7 +63,7 @@ export default function AboutUs() {
             <div className="row">
               <div className="col-md-12 aboutSec2">
                 {/* <h3 className="text-center">ABOUT US</h3> */}
-                <p className="">
+                <h4 className="secHea ">
                   We are group of professional chefs decide to open a small
                   restaurant operation here in Sunnyvale, believed in ourselves
                   to maintain Quality and Affordability in concern we came out
@@ -71,10 +71,13 @@ export default function AboutUs() {
                   any other restaurants or food truck to combine menu from all
                   over India, should make it looks like this is everyone’s spot
                   as we all thrive for street foods and best Chai we also had
-                  the same missing feel. “INDIAN STREET FOOD TRUCK” is one of
-                  the must try spot where you all should stop by and give us
-                  your support.
-                </p>
+                  the same missing feel.{" "}
+                  <span style={{ color: "var(--themeRed)" }}>
+                    INDIAN STREET FOOD TRUCK
+                  </span>{" "}
+                  is one of the must try spot where you all should stop by and
+                  give us your support.
+                </h4>
               </div>
             </div>
           </div>
@@ -92,11 +95,11 @@ export default function AboutUs() {
         </div>
       </div>
       <section className="mt-3 p-20 mb-5">
-      <div className="row">
-        <div className={css.heading1}>
-                {/* <div className="col-md-12"> */}
-                <span>Indian Food Truck</span>
-        </div>
+        <div className="row">
+          <div className={css.heading1}>
+            {/* <div className="col-md-12"> */}
+            <span>Indian Food Truck</span>
+          </div>
         </div>
 
         <div className="row mt-5">

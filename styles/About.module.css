@@ -3,7 +3,10 @@
   padding-left: 0.2rem;
   padding-right: 0.2rem;
 }
-
+.secHea {
+  font-weight: 10px;
+  margin: 0.5rem -7rem;
+}
 .heroText {
   font-size: 1.6rem;
   font-weight: bold;
@@ -67,6 +70,8 @@
 .heading > :nth-child(2) {
   font-size: 2rem;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 825px) {
@@ -233,13 +238,14 @@
   }
 }
 .aboutSecBackground {
-  background-color: #fdecec;
+  background-color: white;
   border-radius: 1rem;
   margin-top: 0.5rem !important;
   margin: 0.2rem 0.2rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 .heading1 {
   display: flex;

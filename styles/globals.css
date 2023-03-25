@@ -252,7 +252,6 @@ i {
 .cateringSec {
   background-image: linear-gradient(#6a2916, #de7224);
   border-radius: 20px;
-  
 }
 .backgroundColor {
   background: linear-gradient(
@@ -281,6 +280,7 @@ a {
   margin: auto;
   padding: 0px 15px;
   max-width: 1200px;
+  font-family: "Poppins", sans-serif;
 }
 label {
   font-weight: 500;
@@ -509,32 +509,31 @@ ul {
   padding: 10px 0px;
   color: #fff;
 }
-.cateringTable{
-text-align: center!important;
-color: white!important;
-/* background:url("../assets/b1.png")!important; */
+.cateringTable {
+  text-align: center !important;
+  color: white !important;
+  /* background:url("../assets/b1.png")!important; */
 }
-
 
 /* CSS table button */
 .button-table {
   background-color: initial;
-  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
   text-align: center;
   border: 0;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
 }
 
 .button-table:hover {
   box-shadow: rgba(252, 92, 24, 0.5) 0 3px 8px;
 }
-.aboutSecBackground{
+.aboutSecBackground {
   background-color: #fdecec;
 }
 

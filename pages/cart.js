@@ -14,7 +14,17 @@ export default function Cart() {
   const [Order, setOrder] = useState(
     typeof window !== "undefined" && localStorage.getItem("order")
   );
+  const addOnList = [
+    { item: "Pav", price: "$2" },
+    { item: "Idly", price: "$3" },
+    { item: "Bhaji", price: "$1.99" },
+    { item: "Egg", price: "$1.49" },
+    { item: "Bhatura", price: "$4" },
+    { item: "Sambar", price: "$4.99" },
+    { item: "Chicken", price: "$2.99" },
+    { item: "Channa Masala", price: "$5.99" },
 
+  ];
   const handleRemove = (i) => {
     removeFood(i);
     toast.error("Item Removed");
@@ -97,6 +107,7 @@ export default function Cart() {
         </div>
 
         {/* Summary */}
+        <div>
         <div className={css.cart}>
           <span>Cart</span>
           <div className={css.CartDetails}>
@@ -113,7 +124,6 @@ export default function Cart() {
           </div>
 
           {!Order && CartData.foods.length > 0 ? (
-         
             <div className={css.buttons}>
               {/* <button className="btn" onClick={handleOnDelivery}>
                 {" "}
@@ -124,9 +134,23 @@ export default function Cart() {
                 Pay Now
               </button>
             </div>
-           ) : null} 
+          ) : null}
+          </div>
+          <div className={css.cartAddOn}>
+          <span className="mb-4">Add On</span>
+              <div className="row">
+           <div className="col-md-12">
+              {addOnList.length > 0 &&
+                addOnList.map((item, i) => { return( <button className="m-2 button-33" role="button">{item.item} {item.price}</button>)})}
+            </div>
+            </div>
+            </div>
         </div>
       </div>
+
+
+
+
       <Toaster />
 
       {/* Modal */}

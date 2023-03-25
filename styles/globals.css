@@ -538,3 +538,29 @@ color: white!important;
   background-color: #fdecec;
 }
 
+
+/* CSS */
+.button-33 {
+  background-color: #6E6D70;
+  border-radius: 100px;
+  box-shadow:rgb(250 230 230 / 31%) 0 -25px 18px -14px inset, rgb(250 230 230 / 42%) 0 1px 2px, rgb(250 230 230 / 21%) 0 2px 4px, rgb(250 230 230 / 44%) 0 4px 8px, rgb(250 230 230 / 52%) 0 8px 16px, rgb(250 230 230 / 51%) 0 16px 32px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow:rgb(250 230 230 / 31%) 0 -25px 18px -14px inset, rgb(250 230 230 / 42%) 0 1px 2px, rgb(250 230 230 / 21%) 0 2px 4px, rgb(250 230 230 / 44%) 0 4px 8px, rgb(250 230 230 / 52%) 0 8px 16px, rgb(250 230 230 / 51%) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+

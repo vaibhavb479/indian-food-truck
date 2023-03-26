@@ -142,14 +142,14 @@ export default function Cart() {
               </div>
             ) : null}
           </div>
-          <div className={css.cartAddOn} key={item}>
+          <div className={css.cartAddOn}>
             <span className="mb-4">Add On</span>
             <div className="row">
               <div className="col-md-12">
                 {addOnList.length > 0 &&
                   addOnList.map((item, i) => {
                     return (
-                      <button className="m-2 button-33" role="button">
+                      <button key={item} className="m-2 button-33" role="button">
                         {item.item} {item.price}
                       </button>
                     );

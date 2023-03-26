@@ -7,7 +7,11 @@ export default function Menu({ foods }) {
   return (
     <div className={css.container}>
       <div className={css.heading}>
-        <span>Most Popular House Special</span>
+        <span>
+          <marquee behavior="scroll" direction="left" scrollamount="15">
+            Most Popular House Special
+          </marquee>
+        </span>
       </div>
 
       <div className={css.menu}>

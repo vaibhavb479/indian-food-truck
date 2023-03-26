@@ -17,9 +17,11 @@
 }
 
 .heading > :nth-child(1) {
-  color: var(--themeRed);
+  color: #f5ebeb;
   font-size: 2rem;
-  /* margin-bottom: 2rem; */
+  background-color: #d5b4b4;
+  text-align: center;
+  margin: 0rem -8rem;
 }
 
 .heading > :nth-child(2),

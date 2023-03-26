@@ -2,24 +2,35 @@
   .container {
     padding: 2rem;
     display: grid;
-    grid-template-columns: 2.2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 0fr;
+    /* gap: 2rem; */
   }
 }
 @media screen and (max-width: 768px) {
   .container {
-    padding: 2rem;
-
-    /* display: grid;
-  grid-template-columns: 2.2fr 1fr;
-  gap: 2rem; */
+    padding: 1rem;
+  }
+  .CartDetails {
+    width: 100% !important;
   }
 }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: flex-start;
+  color: #f5ebeb;
+  font-size: 2rem;
+  background-color: #d5b4b4;
+  text-align: center;
+  margin: 7rem -8rem 2rem;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 1rem;
-  margin-top: 4.5rem;
   justify-content: center;
   text-align: center;
 }
@@ -30,9 +41,22 @@
   text-align: center;
 }
 
-/* .tbody > tr > :nth-child(2) {
-      width: 15%;
-    } */
+.tbody > tr > :nth-child(1) {
+  width: 20%;
+}
+
+.tbody > tr > :nth-child(2) {
+  width: 20%;
+}
+.tbody > tr > :nth-child(3) {
+  width: 20%;
+}
+.tbody > tr > :nth-child(4) {
+  width: 20%;
+}
+.tbody > tr > :nth-child(5) {
+  width: 15%;
+}
 
 .imageTd > span > img {
   border-radius: 1rem;
@@ -57,7 +81,7 @@
 }
 
 .CartDetails {
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -82,4 +106,23 @@
   background-color: transparent;
   color: var(--themeRed);
   border: 2px solid var(--themeRed);
+}
+
+.cartAddOn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 16rem; */
+  padding: 1.6rem;
+  background-color: var(--cartBack);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+  margin-top: 4.5rem;
+  gap: 0.6rem;
+}
+
+.cartAddOn > span {
+  font-weight: bold;
+  font-size: 1.5rem;
 }

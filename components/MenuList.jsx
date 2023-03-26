@@ -41,7 +41,7 @@ export default function MenuList({ foods }) {
     <div className={css.container}>
       <div className={css.heading}>
         <span>
-          <marquee behavior="scroll" direction="right" scrollamount="12">
+          <marquee behavior="scroll" direction="left" scrollamount="12">
            🤩 Our Menu 🤩
           </marquee>
         </span>

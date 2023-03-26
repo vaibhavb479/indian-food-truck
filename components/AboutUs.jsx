@@ -63,7 +63,7 @@ export default function AboutUs() {
             <div className="row">
               <div className="col-md-12 aboutSec2">
                 {/* <h3 className="text-center">ABOUT US</h3> */}
-                <h4 className="secHea ">
+                <h4 className="text-black-50">
                   We are group of professional chefs decide to open a small
                   restaurant operation here in Sunnyvale, believed in ourselves
                   to maintain Quality and Affordability in concern we came out

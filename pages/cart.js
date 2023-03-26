@@ -23,7 +23,6 @@ export default function Cart() {
     { item: "Sambar", price: "$4.99" },
     { item: "Chicken", price: "$2.99" },
     { item: "Channa Masala", price: "$5.99" },
-
   ];
   const handleRemove = (i) => {
     removeFood(i);
@@ -58,27 +57,33 @@ export default function Cart() {
   };
   return (
     <Layout>
-      <div className={css.container}>
-        {/* Details */}
-        <div className={css.details}>
-          <table className={css.table}>
-            <thead>
-              <th>Food</th>
-              <th>Name</th>
-              <th>Category</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-              <th></th>
-            </thead>
-            <tbody className={css.tbody}>
-              {CartData.foods.length > 0 &&
-                CartData.foods.map((food, i) => {
-                  const src = urlFor(food.image).url();
+      <div className={css.heading}>
+        <span>
+          <marquee behavior="scroll" direction="left" scrollamount="15">
+            Order Details
+          </marquee>
+        </span>
+      </div>
+      {/* Details */}
+      <div className={css.details}>
+        <table className={css.table}>
+          <thead>
+            {/* <th>Food</th> */}
+            <th>Name</th>
+            {/* <th>Category</th> */}
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </thead>
+          <tbody className={css.tbody}>
+            {CartData.foods.length > 0 &&
+              CartData.foods.map((food, i) => {
+                const src = urlFor(food.image).url();
 
-                  return (
-                    <tr key={i}>
-                      <td className={css.imageTd}>
+                return (
+                  <tr key={i}>
+                    {/* <td className={css.imageTd}>
                         <Image
                           loader={() => src}
                           src={src}
@@ -87,70 +92,73 @@ export default function Cart() {
                           width={85}
                           height={85}
                         />
-                      </td>
-                      <td>{food.name}</td>
-                      <td>{food?.menuType[food.category]}</td>
-                      <td>{food.price}</td>
-                      <td>{food.quantity}</td>
-                      <td>{food.price * food.quantity}</td>
-                      <td
-                        style={{ color: "var(--themeRed)", cursor: "pointer" }}
-                        onClick={() => handleRemove(i)}
-                      >
-                        x
-                      </td>
-                    </tr>
-                  );
-                })}
-            </tbody>
-          </table>
-        </div>
+                      </td> */}
+                    <td>{food.name}</td>
+                    {/* <td>{food?.menuType[food.category]}</td> */}
+                    <td>{food.price}</td>
+                    <td>{food.quantity}</td>
+                    <td>{food.price * food.quantity}</td>
+                    <td
+                      style={{ color: "var(--themeRed)", cursor: "pointer" }}
+                      onClick={() => handleRemove(i)}
+                    >
+                      x
+                    </td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        </table>
+      </div>
 
+      <div className={css.container}>
         {/* Summary */}
         <div>
-        <div className={css.cart}>
-          <span>Cart</span>
-          <div className={css.CartDetails}>
-            <div>
-              <span>items</span>
-              <span>{CartData.foods.length}</span>
+          <div className={css.cart}>
+            <span>Cart</span>
+            <div className={css.CartDetails}>
+              <div>
+                <span>items</span>
+                <span>{CartData.foods.length}</span>
+              </div>
+              <div>
+                <span>Total</span>
+                <span>
+                  <span style={{ color: "var(--themeRed)" }}>$</span> {total()}
+                </span>
+              </div>
             </div>
-            <div>
-              <span>Total</span>
-              <span>
-                <span style={{ color: "var(--themeRed)" }}>$</span> {total()}
-              </span>
-            </div>
-          </div>
 
-          {!Order && CartData.foods.length > 0 ? (
-            <div className={css.buttons}>
-              {/* <button className="btn" onClick={handleOnDelivery}>
+            {!Order && CartData.foods.length > 0 ? (
+              <div className={css.buttons}>
+                {/* <button className="btn" onClick={handleOnDelivery}>
                 {" "}
                 Pay on Delivery
               </button> */}
-              <button className="btnColor" onClick={handleCheckout}>
-                {" "}
-                Pay Now
-              </button>
-            </div>
-          ) : null}
+                <button className="btnColor" onClick={handleCheckout}>
+                  {" "}
+                  Pay Now
+                </button>
+              </div>
+            ) : null}
           </div>
-          <div className={css.cartAddOn}>
-          <span className="mb-4">Add On</span>
-              <div className="row">
-           <div className="col-md-12">
-              {addOnList.length > 0 &&
-                addOnList.map((item, i) => { return( <button className="m-2 button-33" role="button">{item.item} {item.price}</button>)})}
+          <div className={css.cartAddOn} key={item}>
+            <span className="mb-4">Add On</span>
+            <div className="row">
+              <div className="col-md-12">
+                {addOnList.length > 0 &&
+                  addOnList.map((item, i) => {
+                    return (
+                      <button className="m-2 button-33" role="button">
+                        {item.item} {item.price}
+                      </button>
+                    );
+                  })}
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
         </div>
       </div>
-
-
-
-
       <Toaster />
 
       {/* Modal */}

@@ -149,7 +149,11 @@ export default function Cart() {
                 {addOnList.length > 0 &&
                   addOnList.map((item, i) => {
                     return (
-                      <button key={item} className="m-2 button-33" role="button">
+                      <button
+                        key={item}
+                        className="m-2 button-33"
+                        role="button"
+                      >
                         {item.item} {item.price}
                       </button>
                     );

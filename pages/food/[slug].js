@@ -9,6 +9,7 @@ import { useStore } from "../../store/store";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Food({ food }) {
+  console.log('foodList',food);
   const src = urlFor(food.image).url();
 
   const [Category, setCategory] = useState(0);
@@ -77,6 +78,24 @@ export default function Food({ food }) {
         </div>
           </div>
          
+         
+
+
+
+          <div className={css.varients}>
+            <span>Add On</span>
+            <div className={css.sizeVarients}>
+           
+                <div
+                 
+                  onClick={() => setCategory(0)}
+                  className={css.selected}
+                >
+                  <span style={{color:"white"}}>{food.addOn}</span>
+                </div>
+            
+        </div>
+          </div>
 
           {/* Quantity Counter */}
           <div className={css.quantity}>

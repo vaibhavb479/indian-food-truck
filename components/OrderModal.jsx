@@ -37,6 +37,11 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
 
     router.push(`/order/${id}`);
   };
+
+
+
+
+  
   return (
     <Modal
       overlayColor={

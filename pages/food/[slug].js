@@ -89,9 +89,9 @@ export default function Food({ food }) {
                 <div
                  
                  onClick={() =>addOnMenuAdd(food.addOnPrice)}
-                  className={css.selected}
+                  // className={AddOnPrice== 0 ? '' : css.selected}
                 >
-                  <span style={{color:"white"}}>{food.addOn}</span>
+                 {food.addOn}
                 </div>
             
         </div>

@@ -70,17 +70,19 @@ export default function Cart() {
           <thead>
             {/* <th>Food</th> */}
             <th>Name</th>
-            {/* <th>Category</th> */}
+            <th>Category</th>
             <th>Price</th>
+            <th>Addon</th>
             <th>Quantity</th>
             <th>Total</th>
             <th></th>
           </thead>
           <tbody className={css.tbody}>
+          
             {CartData.foods.length > 0 &&
               CartData.foods.map((food, i) => {
                 const src = urlFor(food.image).url();
-
+                
                 return (
                   <tr key={i}>
                     {/* <td className={css.imageTd}>
@@ -94,8 +96,9 @@ export default function Cart() {
                         />
                       </td> */}
                     <td>{food.name}</td>
-                    {/* <td>{food?.menuType[food.category]}</td> */}
+                    <td>{food?.menuType[food.category]}</td>
                     <td>{food.price}</td>
+                    <td>{food.addonprice > 0 ? <span>{food.addOn}</span>:'-'}</td>
                     <td>{food.quantity}</td>
                     <td>{food.price * food.quantity}</td>
                     <td

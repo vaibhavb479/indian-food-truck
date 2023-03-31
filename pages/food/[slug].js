@@ -12,6 +12,7 @@ export default function Food({ food }) {
   const src = urlFor(food.image).url();
 
   const [Category, setCategory] = useState(0);
+  const [AddOnPrice, setaddonPrice] = useState(0);
 
   const [Quantity, setQuantity] = useState(1);
 
@@ -30,12 +31,16 @@ export default function Food({ food }) {
   const addToCart = () => {
     addFood({
       ...food,
-      price: food.price[Category],
+      price: food.price[Category]+AddOnPrice,
       quantity: Quantity,
       category: Category,
+      addonprice: AddOnPrice
     });
     toast.success("Added to Cart");
   };
+  const addOnMenuAdd=(addonPrice)=>{
+    setaddonPrice(addonPrice);
+  }
   return (
     <Layout>
       <div className={css.container}>
@@ -58,7 +63,7 @@ export default function Food({ food }) {
 
           <span>
             <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
-            {food.price[Category]}
+            {food.price[Category] + AddOnPrice}
           </span>
           <div className={css.varients}>
             <span>Category</span>
@@ -77,7 +82,20 @@ export default function Food({ food }) {
         </div>
           </div>
          
-
+          <div className={css.varients}>
+            <span>Add On</span>
+            <div className={css.sizeVarients}>
+           
+                <div
+                 
+                 onClick={() =>addOnMenuAdd(food.addOnPrice)}
+                  // className={AddOnPrice== 0 ? '' : css.selected}
+                >
+                 {food.addOn}
+                </div>
+            
+        </div>
+          </div>
           {/* Quantity Counter */}
           <div className={css.quantity}>
             <span>Quantity</span>

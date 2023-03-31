@@ -54,5 +54,15 @@ export default {
       type: "array",
       of: [{ type: "string" }],
     },
+    {
+      name: "addOn",
+      title: "Add On",
+      type: "string",
+    },
+    {
+      name: "addOnPrice",
+      title: "Add On Price",
+      type: "number",
+    },
   ],
 };

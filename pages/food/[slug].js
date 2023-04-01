@@ -109,21 +109,31 @@ export default function Food({ food }) {
             </div>
           </div>
 
-          <div className={css.varients}>
-            <span>Add On</span>
-            <div className={css.sizeVarients}>
-              {!show && (
-                <div onClick={() => addOnMenuAdd(food.addOnPrice, true)}>
-                  {food.addOn}
-                </div>
-              )}
-              {show && (
-                <div onClick={() => addOnMenuAdd(food.addOnPrice, false)}>
-                  {food.addOn}
-                </div>
-              )}
+          {food.addOn != null ? (
+            <div className={css.varients}>
+              <span>Add On</span>
+              <div className={css.sizeVarients}>
+                {!show && (
+                  <div
+                    onClick={() => addOnMenuAdd(food.addOnPrice, true)}
+                    className={show == true ? css.selected : ""}
+                  >
+                    {food.addOn}
+                  </div>
+                )}
+                {show && (
+                  <div
+                    onClick={() => addOnMenuAdd(food.addOnPrice, false)}
+                    className={show == true ? css.selected : ""}
+                  >
+                    {food.addOn}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
           {/* Quantity Counter */}
           <div className={css.quantity}>
             <span>Quantity</span>

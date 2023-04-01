@@ -25,22 +25,36 @@ export default function Food({ food }) {
       ? null
       : setQuantity((prev) => prev - 1);
   };
+  const [show, setShow] = useState(false);
 
   //add to cart function
   const addFood = useStore((state) => state.addFood);
   const addToCart = () => {
+    if (show == true) {
+      AddOnPrice;
+    } else {
+      AddOnPrice = 0;
+    }
     addFood({
       ...food,
-      price: food.price[Category]+AddOnPrice,
+      price: food.price[Category] + AddOnPrice,
       quantity: Quantity,
       category: Category,
-      addonprice: AddOnPrice
+      addonprice: AddOnPrice,
     });
     toast.success("Added to Cart");
   };
-  const addOnMenuAdd=(addonPrice)=>{
-    setaddonPrice(addonPrice);
-  }
+
+  const addOnMenuAdd = (addonPrice, flag) => {
+    debugger;
+
+    setShow(flag);
+    if (flag == true) {
+      setaddonPrice(addonPrice);
+    } else {
+      setaddonPrice(addonPrice);
+    }
+  };
   return (
     <Layout>
       <div className={css.container}>
@@ -63,13 +77,27 @@ export default function Food({ food }) {
 
           <span>
             <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
-            {food.price[Category] + AddOnPrice}
+            {show == true ? (
+              <span> {food.price[Category] + AddOnPrice}</span>
+            ) : (
+              ""
+            )}
+            {show == false ? (
+              <span> {food.price[Category] + AddOnPrice - AddOnPrice}</span>
+            ) : (
+              ""
+            )}
           </span>
           <div className={css.varients}>
             <span>Category</span>
-            <div className={food?.menuType.length <= '3' ? css.sizeVarients: css.sizeVarients1}>
+            <div
+              className={
+                food?.menuType.length <= "3"
+                  ? css.sizeVarients
+                  : css.sizeVarients1
+              }
+            >
               {food?.menuType.map((item, index) => (
-              
                 <div
                   key={item}
                   onClick={() => setCategory(index)}
@@ -77,24 +105,24 @@ export default function Food({ food }) {
                 >
                   {item}
                 </div>
-               
               ))}
-        </div>
+            </div>
           </div>
-         
+
           <div className={css.varients}>
             <span>Add On</span>
             <div className={css.sizeVarients}>
-           
-                <div
-                 
-                 onClick={() =>addOnMenuAdd(food.addOnPrice)}
-                  // className={AddOnPrice== 0 ? '' : css.selected}
-                >
-                 {food.addOn}
+              {!show && (
+                <div onClick={() => addOnMenuAdd(food.addOnPrice, true)}>
+                  {food.addOn}
                 </div>
-            
-        </div>
+              )}
+              {show && (
+                <div onClick={() => addOnMenuAdd(food.addOnPrice, false)}>
+                  {food.addOn}
+                </div>
+              )}
+            </div>
           </div>
           {/* Quantity Counter */}
           <div className={css.quantity}>

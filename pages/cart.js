@@ -90,7 +90,7 @@ export default function Cart() {
                       <td>{food?.menuType[food.category]}</td>
                       <td>{food.price}</td>
                       <td>
-                        {food.addonprice > 0 ? <span>{food.addOn}</span> : '-'}
+                        {food.addonprice > 0 ? <span>{food.addOn}</span> : "-"}
                       </td>
                       <td>{food.quantity}</td>
                       <td>{food.price * food.quantity}</td>
@@ -130,10 +130,11 @@ export default function Cart() {
                 {" "}
                 Pay on Delivery
               </button> */}
-                <button className="btnColor" onClick={handleCheckout}>
+              
+                {/* <button className="btnColor" onClick={handleCheckout}>
                   {" "}
                   Pay Now
-                </button>
+                </button> */}
               </div>
             ) : null}
           </div>

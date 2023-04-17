@@ -6,6 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
 import { useRouter } from "next/router";
 import React, { Component ,useEffect} from 'react';
+import AdminNotification from "../components/AdminNotification";
 
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   // var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
@@ -13,6 +14,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
+  const [notification, setNotification] = useState("false");
 
   const handleInput = (e) => {
     setFormData({ ...FormData, [e.target.name]: e.target.value });
@@ -29,7 +31,8 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     e.preventDefault();
     const id = await createOrder({ ...FormData, total, PaymentMethod });
     toast.success("Order Placed");
-     audio.play();
+    audio.play();
+    onSubmit();
     resetCart();
     {
       typeof window !== "undefined" && localStorage.setItem("order", id);
@@ -37,6 +40,28 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
 
     router.push(`/order/${id}`);
   };
+  const onSubmit=()=>{
+    debugger;
+  
+    fetch('/api/messages', {
+      
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        to: 'bhagyashrijaware30@gmail.com',
+        body: 'orderplaced'})
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+      
+        } else {
+       
+        }
+      });
+  }
   return (
     <Modal
       overlayColor={
@@ -79,6 +104,8 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
         </button>
       </form>
       <Toaster />
+      <AdminNotification paragraph={notification} />
     </Modal>
+    
   );
 }

@@ -6,7 +6,6 @@ import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
 import { useRouter } from "next/router";
 import React, { Component ,useEffect} from 'react';
-import AdminNotification from "../components/AdminNotification";
 
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   // var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
@@ -14,7 +13,6 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
-  const [notification, setNotification] = useState("false");
 
   const handleInput = (e) => {
     setFormData({ ...FormData, [e.target.name]: e.target.value });
@@ -32,7 +30,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     const id = await createOrder({ ...FormData, total, PaymentMethod });
     toast.success("Order Placed");
     audio.play();
-    onSubmit();
+    sendMessage();
     resetCart();
     {
       typeof window !== "undefined" && localStorage.setItem("order", id);
@@ -40,28 +38,28 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
 
     router.push(`/order/${id}`);
   };
-  const onSubmit=()=>{
-    debugger;
-  
-    fetch('/api/messages', {
-      
+
+  const [success, setSuccess] = useState(true);
+  const [error, setError] = useState(false);
+
+  const sendMessage = async (e) => {
+    // e.preventDefault();
+    setError(false);
+    setSuccess(false);
+    const res = await fetch('/api/sendMessage', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        to: 'bhagyashrijaware30@gmail.com',
-        body: 'orderplaced'})
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) {
-      
-        } else {
-       
-        }
-      });
-  }
+      body: JSON.stringify({ phone: +15075933721, message: "New Order Received" }),
+    });
+    const apiResponse = await res.json();
+    if (apiResponse.success) {
+      setSuccess(true);
+    } else {
+      setError(true);
+    }
+  };
   return (
     <Modal
       overlayColor={
@@ -104,7 +102,6 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
         </button>
       </form>
       <Toaster />
-      <AdminNotification paragraph={notification} />
     </Modal>
     
   );

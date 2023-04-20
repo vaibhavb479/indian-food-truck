@@ -46,8 +46,7 @@ export default function Food({ food }) {
   };
 
   const addOnMenuAdd = (addonPrice, flag) => {
-    debugger;
-
+    
     setShow(flag);
     if (flag == true) {
       setaddonPrice(addonPrice);

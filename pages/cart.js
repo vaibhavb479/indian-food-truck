@@ -100,7 +100,7 @@ export default function Cart() {
                     <td>{food.price.toFixed(2)}</td>
                     <td>{food.addonprice > 0 ? <span>{food.addOn}</span>:'-'}</td>
                     <td>{food.quantity}</td>
-                    <td>{food.price * food.quantity.toFixed(2)}</td>
+                    <td>{(food.price * food.quantity).toFixed(2)}</td>
                     <td
                       style={{ color: "var(--themeRed)", cursor: "pointer" }}
                       onClick={() => handleRemove(i)}

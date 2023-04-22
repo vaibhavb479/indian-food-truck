@@ -97,10 +97,10 @@ export default function Cart() {
                       </td> */}
                     <td>{food.name}</td>
                     <td>{food?.menuType[food.category]}</td>
-                    <td>{food.price}</td>
+                    <td>{food.price.toFixed(2)}</td>
                     <td>{food.addonprice > 0 ? <span>{food.addOn}</span>:'-'}</td>
                     <td>{food.quantity}</td>
-                    <td>{food.price * food.quantity}</td>
+                    <td>{food.price * food.quantity.toFixed(2)}</td>
                     <td
                       style={{ color: "var(--themeRed)", cursor: "pointer" }}
                       onClick={() => handleRemove(i)}
@@ -127,7 +127,7 @@ export default function Cart() {
               <div>
                 <span>Total</span>
                 <span>
-                  <span style={{ color: "var(--themeRed)" }}>$</span> {total()}
+                  <span style={{ color: "var(--themeRed)" }}>$</span> {total().toFixed(2)}
                 </span>
               </div>
             </div>

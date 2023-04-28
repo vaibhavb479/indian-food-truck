@@ -14,11 +14,15 @@ export default function Cart() {
   const [Order, setOrder] = useState(
     typeof window !== "undefined" && localStorage.getItem("order")
   );
-
+  // typeof window !== "undefined" &&
+  //   localStorage.setItem("category", CartData.foods[0].menuType[0]);
+  console.log(CartData, "demo...");
   const handleRemove = (i) => {
     removeFood(i);
     toast.error("Item Removed");
   };
+
+  // console.log(CartData.foods[0].menuType, "demo1212121");
 
   const router = useRouter();
   const total = () =>
@@ -28,7 +32,7 @@ export default function Cart() {
     setPaymentMethod(0);
     typeof window !== "undefined" && localStorage.setItem("total", total());
   };
-  console.log(CartData.foods, "list");
+  console.log(CartData.foods, "list...123");
   const handleCheckout = async () => {
     typeof window !== "undefined" && localStorage.setItem("total", total());
     setPaymentMethod(1);
@@ -127,7 +131,7 @@ export default function Cart() {
 
             {!Order && CartData.foods.length > 0 ? (
               <div className={css.buttons}>
-                {/* <button className="btn" onClick={handleOnDelivery}>
+                <button className="btn" onClick={handleOnDelivery}>
                   {" "}
                   Pay on Delivery
                 </button>
@@ -135,7 +139,7 @@ export default function Cart() {
                 <button className="btnColor" onClick={handleCheckout}>
                   {" "}
                   Pay Now
-                </button> */}
+                </button>
               </div>
             ) : null}
           </div>

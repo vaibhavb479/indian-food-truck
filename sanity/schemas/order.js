@@ -28,10 +28,19 @@ export default {
       },
     },
     {
-      name: "orderDetails",
-      title: "Order Details",
-      type: "array",
-      of: [{ type: "string" }],
+      name: "category",
+      title: "Category",
+      type: "string",
+    },
+    {
+      name: "addOn",
+      title: "Add On",
+      type: "string",
+    },
+    {
+      name: "quantity",
+      title: "Quantity",
+      type: "number",
     },
     {
       name: "method",

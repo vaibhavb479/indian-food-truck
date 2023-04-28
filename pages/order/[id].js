@@ -22,6 +22,7 @@ export default function Orders({ order }) {
   useEffect(() => {
     if (order.status > 3) localStorage.clear();
   }, [order]);
+  console.log(order, "ordersdemo");
   return (
     <Layout>
       <div className={css.container}>

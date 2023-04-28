@@ -14,16 +14,7 @@ export default function Cart() {
   const [Order, setOrder] = useState(
     typeof window !== "undefined" && localStorage.getItem("order")
   );
-  const addOnList = [
-    { item: "Pav", price: "$2" },
-    { item: "Idly", price: "$3" },
-    { item: "Bhaji", price: "$1.99" },
-    { item: "Egg", price: "$1.49" },
-    { item: "Bhatura", price: "$4" },
-    { item: "Sambar", price: "$4.99" },
-    { item: "Chicken", price: "$2.99" },
-    { item: "Channa Masala", price: "$5.99" },
-  ];
+
   const handleRemove = (i) => {
     removeFood(i);
     toast.error("Item Removed");
@@ -65,27 +56,27 @@ export default function Cart() {
         </span>
       </div>
       {/* Details */}
-      <div className={css.details}>
-        <table className={css.table}>
-          <thead>
-            {/* <th>Food</th> */}
-            <th>Name</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>Addon</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th></th>
-          </thead>
-          <tbody className={css.tbody}>
-          
-            {CartData.foods.length > 0 &&
-              CartData.foods.map((food, i) => {
-                const src = urlFor(food.image).url();
-                
-                return (
-                  <tr key={i}>
-                    {/* <td className={css.imageTd}>
+      <div className={css.container}>
+        <div className={css.details}>
+          <table className={css.table}>
+            <thead>
+              {/* <th>Food</th> */}
+              <th>Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Addon</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th></th>
+            </thead>
+            <tbody className={css.tbody}>
+              {CartData.foods.length > 0 &&
+                CartData.foods.map((food, i) => {
+                  const src = urlFor(food.image).url();
+
+                  return (
+                    <tr key={i}>
+                      {/* <td className={css.imageTd}>
                         <Image
                           loader={() => src}
                           src={src}
@@ -114,7 +105,6 @@ export default function Cart() {
         </table>
       </div>
 
-      <div className={css.container}>
         {/* Summary */}
         <div>
           <div className={css.cart}>
@@ -135,34 +125,16 @@ export default function Cart() {
             {!Order && CartData.foods.length > 0 ? (
               <div className={css.buttons}>
                 {/* <button className="btn" onClick={handleOnDelivery}>
-                {" "}
-                Pay on Delivery
-              </button> */}
+                  {" "}
+                  Pay on Delivery
+                </button>
+
                 <button className="btnColor" onClick={handleCheckout}>
                   {" "}
                   Pay Now
-                </button>
+                </button> */}
               </div>
             ) : null}
-          </div>
-          <div className={css.cartAddOn}>
-            <span className="mb-4">Add On</span>
-            <div className="row">
-              <div className="col-md-12">
-                {addOnList.length > 0 &&
-                  addOnList.map((item, i) => {
-                    return (
-                      <button
-                        key={item}
-                        className="m-2 button-33"
-                        role="button"
-                      >
-                        {item.item} {item.price}
-                      </button>
-                    );
-                  })}
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -7,8 +7,8 @@ export default function AboutUs() {
   return (
     <div className={css.container}>
       <div className={css.details}>
-        <div class="table-responsive">
-          <table class="table table-striped">
+        <div className="table-responsive">
+          <table className="table table-striped">
             <thead>
               <tr>
                 <th>Name</th>

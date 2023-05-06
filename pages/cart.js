@@ -86,26 +86,24 @@ export default function Cart() {
                           height={85}
                         />
                       </td> */}
-                      <td>{food.name}</td>
-                      <td>{food?.menuType[food.category]}</td>
-                      <td>{food.price}</td>
-                      <td>
-                        {food.addonprice > 0 ? <span>{food.addOn}</span> : "-"}
-                      </td>
-                      <td>{food.quantity}</td>
-                      <td>{food.price * food.quantity}</td>
-                      <td
-                        style={{ color: "var(--themeRed)", cursor: "pointer" }}
-                        onClick={() => handleRemove(i)}
-                      >
-                        x
-                      </td>
-                    </tr>
-                  );
-                })}
-            </tbody>
-          </table>
-        </div>
+                    <td>{food.name}</td>
+                    <td>{food?.menuType[food.category]}</td>
+                    <td>{food.price.toFixed(2)}</td>
+                    <td>{food.addonprice > 0 ? <span>{food.addOn}</span>:'-'}</td>
+                    <td>{food.quantity}</td>
+                    <td>{(food.price * food.quantity).toFixed(2)}</td>
+                    <td
+                      style={{ color: "var(--themeRed)", cursor: "pointer" }}
+                      onClick={() => handleRemove(i)}
+                    >
+                      x
+                    </td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        </table>
+      </div>
 
         {/* Summary */}
         <div>
@@ -119,7 +117,7 @@ export default function Cart() {
               <div>
                 <span>Total</span>
                 <span>
-                  <span style={{ color: "var(--themeRed)" }}>$</span> {total()}
+                  <span style={{ color: "var(--themeRed)" }}>$</span> {total().toFixed(2)}
                 </span>
               </div>
             </div>

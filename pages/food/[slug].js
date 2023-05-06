@@ -46,8 +46,7 @@ export default function Food({ food }) {
   };
 
   const addOnMenuAdd = (addonPrice, flag) => {
-    debugger;
-
+    
     setShow(flag);
     if (flag == true) {
       setaddonPrice(addonPrice);
@@ -78,12 +77,12 @@ export default function Food({ food }) {
           <span>
             <span style={{ color: "var(--themeRed)" }}>$</span>{" "}
             {show == true ? (
-              <span> {food.price[Category] + AddOnPrice}</span>
+              <span> {(food.price[Category] + AddOnPrice).toFixed(2)}</span>
             ) : (
               ""
             )}
             {show == false ? (
-              <span> {food.price[Category] + AddOnPrice - AddOnPrice}</span>
+              <span> {(food.price[Category] + AddOnPrice - AddOnPrice).toFixed(2)}</span>
             ) : (
               ""
             )}

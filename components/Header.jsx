@@ -70,6 +70,9 @@ export default function Header() {
               <Link href="/catering">Catering</Link>
             </li>
             <li className="nav-item mb-1">
+              <Link href="/admin">Admin</Link>
+            </li>
+            <li className="nav-item mb-1">
               <Link href="/cart">
                 <div className={css.cart}>
                   <UilShoppingBag size={35} color="#2E2E2E" />

@@ -29,13 +29,36 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     e.preventDefault();
     const id = await createOrder({ ...FormData, total, PaymentMethod });
     toast.success("Order Placed");
-     audio.play();
+    audio.play();
+    sendMessage();
     resetCart();
     {
       typeof window !== "undefined" && localStorage.setItem("order", id);
     }
 
     router.push(`/order/${id}`);
+  };
+
+  const [success, setSuccess] = useState(true);
+  const [error, setError] = useState(false);
+
+  const sendMessage = async (e) => {
+    // e.preventDefault();
+    setError(false);
+    setSuccess(false);
+    const res = await fetch('/api/sendMessage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ phone: +15075933721, message: "New Order Received" }),
+    });
+    const apiResponse = await res.json();
+    if (apiResponse.success) {
+      setSuccess(true);
+    } else {
+      setError(true);
+    }
   };
   return (
     <Modal
@@ -80,5 +103,6 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
       </form>
       <Toaster />
     </Modal>
+    
   );
 }

@@ -1,53 +1,89 @@
 export default {
-  name: "order",
-  title: "Order",
-  type: "document",
+  name: 'order',
+  title: 'Order',
+  type: 'document',
   fields: [
     {
-      name: "name",
-      title: "Name",
-      type: "string",
+      name: 'name',
+      title: 'Name',
+      type: 'string',
       options: {
         maxLength: 40,
       },
     },
     {
-      name: "phone",
-      title: "Phone",
-      type: "string",
+      name: 'phone',
+      title: 'Phone',
+      type: 'string',
       options: {
         maxLength: 15,
       },
     },
     {
-      name: "address",
-      title: "Address",
-      type: "string",
+      name: 'address',
+      title: 'Address',
+      type: 'string',
       options: {
         maxLength: 100,
       },
     },
     {
-      name: "orderDetails",
-      title: "Order Details",
-      type: "array",
-      of: [{ type: "string" }],
+      title: 'Amount',
+      name: 'amount',
+      type: 'number',
     },
     {
-      name: "method",
-      title: "Method",
-      type: "number",
-    },
-
-    {
-      name: "total",
-      title: "Total",
-      type: "number",
+      title: 'Note',
+      name: 'note',
+      type: 'text',
     },
     {
-      name: "status",
-      title: "Status",
-      type: "number",
+      name: 'method',
+      title: 'Method',
+      type: 'number',
+    },
+    {
+      name: 'status',
+      title: 'Status',
+      type: 'number',
+    },
+    {
+      title: 'Products',
+      name: 'products',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'product',
+          fields: [
+            {
+              title: 'Name',
+              name: 'name',
+              type: 'string',
+            },
+            {
+              title: 'ID',
+              name: 'id',
+              type: 'string',
+            },
+            {
+              title: 'Amount',
+              name: 'amount',
+              type: 'number',
+            },
+            {
+              title: 'Category',
+              name: 'category',
+              type: 'string',
+            },
+            {
+              title: 'Quantity',
+              name: 'quantity',
+              type: 'number',
+            },
+          ],
+        },
+      ],
     },
   ],
 };

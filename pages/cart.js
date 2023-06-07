@@ -124,7 +124,7 @@ export default function Cart() {
 
             {!Order && CartData.foods.length > 0 ? (
               <div className={css.buttons}>
-                {/* <button className="btn" onClick={handleOnDelivery}>
+                <button className="btn" onClick={handleOnDelivery}>
                   {" "}
                   Pay on Delivery
                 </button>
@@ -132,7 +132,7 @@ export default function Cart() {
                 <button className="btnColor" onClick={handleCheckout}>
                   {" "}
                   Pay Now
-                </button> */}
+                </button>
               </div>
             ) : null}
           </div>

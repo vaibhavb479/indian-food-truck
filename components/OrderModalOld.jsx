@@ -5,11 +5,11 @@ import css from "../styles/OrderModal.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
 import { useRouter } from "next/router";
-import React, { Component ,useEffect} from 'react';
+import React, { Component, useEffect } from "react";
 
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   // var audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
-  const [audio, setAudio] = useState(null)
+  const [audio, setAudio] = useState(null);
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
@@ -20,10 +20,10 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   const resetCart = useStore((state) => state.resetCart);
   const total = typeof window !== "undefined" && localStorage.getItem("total");
   useEffect(() => {
-
-    setAudio(new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"))  // only call client
-
-},[])
+    setAudio(
+      new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
+    ); // only call client
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,12 +46,15 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     // e.preventDefault();
     setError(false);
     setSuccess(false);
-    const res = await fetch('/api/sendMessage', {
-      method: 'POST',
+    const res = await fetch("/api/sendMessage", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ phone: +15075933721, message: "New Order Received" }),
+      body: JSON.stringify({
+        phone: +16692907925,
+        message: "New Order Received",
+      }),
     });
     const apiResponse = await res.json();
     if (apiResponse.success) {
@@ -103,6 +106,5 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
       </form>
       <Toaster />
     </Modal>
-    
   );
 }

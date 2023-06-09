@@ -132,10 +132,10 @@ export default function Cart() {
                   Pay on Delivery
                 </button> */}
 
-                <button className="btnColor" onClick={handleCheckout}>
+                {/* <button className="btnColor" onClick={handleCheckout}>
                   {" "}
                   Pay Now
-                </button>
+                </button> */}
               </div>
             ) : null}
           </div>

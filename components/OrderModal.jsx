@@ -1,13 +1,13 @@
-import { Modal, useMantineTheme } from '@mantine/core';
-import { useState } from 'react';
-import { createOrder } from '../lib/orderHandler';
-import css from '../styles/OrderModal.module.css';
-import toast, { Toaster } from 'react-hot-toast';
-import { useStore } from '../store/store';
-import { useRouter } from 'next/router';
-import React, { Component, useEffect } from 'react';
-import { client } from '../lib/client';
-import { nanoid } from 'nanoid';
+import { Modal, useMantineTheme } from "@mantine/core";
+import { useState } from "react";
+import { createOrder } from "../lib/orderHandler";
+import css from "../styles/OrderModal.module.css";
+import toast, { Toaster } from "react-hot-toast";
+import { useStore } from "../store/store";
+import { useRouter } from "next/router";
+import React, { Component, useEffect } from "react";
+import { client } from "../lib/client";
+import { nanoid } from "nanoid";
 
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   const CartData = useStore((state) => state.cart);
@@ -21,10 +21,10 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     setFormData({ ...FormData, [e.target.name]: e.target.value });
   };
   const resetCart = useStore((state) => state.resetCart);
-  const total = typeof window !== 'undefined' && localStorage.getItem('total');
+  const total = typeof window !== "undefined" && localStorage.getItem("total");
   useEffect(() => {
     setAudio(
-      new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3')
+      new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
     ); // only call client
   }, []);
 
@@ -44,7 +44,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
       };
     });
     const orderObj = {
-      _type: 'order',
+      _type: "order",
       name,
       phone,
       address,
@@ -55,14 +55,14 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     };
 
     const order = await client.create(orderObj);
-    console.log('order created', order);
+    console.log("order created", order);
 
-    toast.success('Order Placed');
+    toast.success("Order Placed");
     audio.play();
     sendMessage();
     resetCart();
     {
-      typeof window !== 'undefined' && localStorage.setItem('order', order._id);
+      typeof window !== "undefined" && localStorage.setItem("order", order._id);
     }
 
     // router.push(`/order/${id}`);
@@ -75,14 +75,14 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     // e.preventDefault();
     setError(false);
     setSuccess(false);
-    const res = await fetch('/api/sendMessage', {
-      method: 'POST',
+    const res = await fetch("/api/sendMessage", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        phone: +15075933721,
-        message: 'New Order Received',
+        phone: +16692907925,
+        message: "New Order Received",
       }),
     });
     const apiResponse = await res.json();
@@ -95,7 +95,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
   return (
     <Modal
       overlayColor={
-        theme.colorScheme === 'dark'
+        theme.colorScheme === "dark"
           ? theme.colors.dark[9]
           : theme.colors.gray[2]
       }
@@ -108,28 +108,28 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
       <form onSubmit={handleSubmit} className={css.formContainer}>
         <input
           onChange={handleInput}
-          type='text'
-          name='name'
+          type="text"
+          name="name"
           required
-          placeholder='Full Name'
+          placeholder="Full Name"
         ></input>
         <input
           onChange={handleInput}
-          type='text'
-          name='phone'
+          type="text"
+          name="phone"
           required
-          placeholder='Phone Number'
+          placeholder="Phone Number"
         ></input>
         <textarea
           onChange={handleInput}
-          name='address'
+          name="address"
           rows={3}
-          placeholder='Address'
+          placeholder="Address"
         ></textarea>
         <span>
           You will pay<span> $ {total}</span> on Delivery
         </span>
-        <button type='submit' className='btn'>
+        <button type="submit" className="btn">
           Place Order
         </button>
       </form>
